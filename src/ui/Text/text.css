@@ -1,3 +1,36 @@
+@font-face {
+  font-family: SF Pro Text;
+  src: url(./fonts/SF-Pro-Text-Regular.otf);
+}
+
+@font-face {
+  font-family: SF Pro Text;
+  src: url(./fonts/SF-Pro-Text-Heavy.otf);
+  font-weight: 1000;
+}
+
+@font-face {
+  font-family: SF Pro Text;
+  src: url(./fonts/SF-Pro-Text-HeavyItalic.otf);
+  font-weight: 1000;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: SF Pro Text;
+  src: url(./fonts/SF-Pro-Text-Bold.otf);
+  font-weight: 700;
+}
+
 .text {
-  
+  font-family: SF Pro Text;
+  font-size: 2rem;
+}
+
+.text-heavy {
+  font-weight: 1000;
+}
+
+.text-bold {
+  font-weight: 700;
 }
