@@ -1,21 +1,27 @@
 import React from 'react';
+import Link from 'gatsby-link';
 import Text from '../Text';
+import './more.css';
 
 const locale = {
   seeMore: 'See more',
 };
 
 const More = () => (
-  <button type="button" className="see-more">
-    <div className="see-more-icon">
-      <span className="icon icon-see-more" />
-    </div>
-    <span className="see-more-text">
-      <Text>
-        {locale.seeMore}
-      </Text>
+  <Link to="/show-more" className="see-more">
+    <span className="see-more-wrapper">
+      <span className="see-more-icon-wrapper">
+        <span className="see-more-icon">
+          <span className="icon icon-see-more" />
+        </span>
+      </span>
+      <span className="see-more-text">
+        <Text bold>
+          {locale.seeMore}
+        </Text>
+      </span>
     </span>
-  </button>
+  </Link>
 );
 
 export default More;

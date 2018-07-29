@@ -20,9 +20,7 @@ const Logo = ({ href }) => (
     </div>
     <div className="logo-text-wrapper">
       <div className="logo-title">
-        <Text
-          heavy
-        >
+        <Text heavy>
           {locale.brandName}
         </Text>
       </div>

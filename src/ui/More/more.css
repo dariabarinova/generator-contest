@@ -1,9 +1,27 @@
 .see-more {
+  display: flex;
+  justify-content: center;
+}
 
+.see-more-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.see-more-icon-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 0 0 .6em;
 }
 
 .see-more-icon {
-
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 4.2rem;
+  height: 4.2rem;
+  background: #fff;
+  border-radius: 2.5rem;
 }
 
 .see-more-text {

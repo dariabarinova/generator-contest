@@ -4,14 +4,16 @@
 
 .icon.icon-see-more {
   background: url(./images/arrow.png) no-repeat;
-  width: 15px;
-  height: 7px;
+  background-size: 1.5rem .7rem;
+  width: 1.5rem;
+  height: .7rem;
 }
 
 .icon.icon-nimax {
   background: url(./images/logo.png) no-repeat;
-  width: 29px;
-  height: 38px;
+  background-size: 2.9rem 3.8rem;
+  width: 2.9rem;
+  height: 3.8rem;
 }
 
 @media
@@ -19,11 +21,11 @@
 (min-resolution: 120dpi) {
   .icon.icon-nimax {
     background: url(./images/logo@2x.png) no-repeat;
-    background-size: 29px 38px;
+    background-size: 2.9rem 3.8rem;
   }
 
   .icon.icon-see-more {
     background: url(./images/arrow@2x.png) no-repeat;
-    background-size: 15px 7px;
+    background-size: 1.5rem .7rem;
   }
 }
