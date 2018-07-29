@@ -20,7 +20,12 @@ const MoreIdeas = ({ children, large }) => (
 );
 
 MoreIdeas.propTypes = {
-  children: PropTypes.element.isRequired,
+  children: PropTypes.oneOfType([
+    PropTypes.element.isRequired,
+    PropTypes.arrayOf(
+      PropTypes.element.isRequired,
+    ).isRequired,
+  ]).isRequired,
   large: PropTypes.bool,
 };
 
