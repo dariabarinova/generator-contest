@@ -1,3 +1,9 @@
-import React from "react"
+import React from 'react';
+import { Ui } from '..';
 
-export default () => <div>Hello world!</div>
+export default () => (
+  <div>
+    <Ui.Logo />
+    <Ui.More />
+  </div>
+);
