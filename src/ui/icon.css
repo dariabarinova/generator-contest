@@ -1,11 +1,29 @@
 .icon {
-
+  display: block;
 }
 
 .icon.icon-see-more {
-
+  background: url(./images/arrow.png) no-repeat;
+  width: 15px;
+  height: 7px;
 }
 
 .icon.icon-nimax {
+  background: url(./images/logo.png) no-repeat;
+  width: 29px;
+  height: 38px;
+}
 
+@media
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 120dpi) {
+  .icon.icon-nimax {
+    background: url(./images/logo@2x.png) no-repeat;
+    background-size: 29px 38px;
+  }
+
+  .icon.icon-see-more {
+    background: url(./images/arrow@2x.png) no-repeat;
+    background-size: 15px 7px;
+  }
 }

@@ -18,16 +18,19 @@ const Logo = ({ href }) => (
     <div className="logo-icon">
       <span className="icon icon-nimax" />
     </div>
-    <div className="logo-title">
-      <Text>
-        {locale.brandName}
-      </Text>
-
-    </div>
-    <div className="logo-instagram">
-      <Text>
-        {locale.instagram}
-      </Text>
+    <div className="logo-text-wrapper">
+      <div className="logo-title">
+        <Text
+          heavy
+        >
+          {locale.brandName}
+        </Text>
+      </div>
+      <div className="logo-instagram">
+        <Text>
+          {locale.instagram}
+        </Text>
+      </div>
     </div>
   </a>
 );
