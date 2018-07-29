@@ -1,11 +1,5 @@
 import React from 'react';
-import { Ui } from '..';
-
-const locale = {
-  moreIdeas: 'Еще идеи',
-  moreIdeasLarge: 'Получить',
-  moreIdeasLargeSubtitle: 'идею',
-};
+import { Ui, locale } from '..';
 
 export default () => (
   <div>
@@ -24,5 +18,6 @@ export default () => (
         {locale.moreIdeasLargeSubtitle}
       </Ui.Text>
     </Ui.MoreIdeas>
+    <Ui.NimaxPromo />
   </div>
 );

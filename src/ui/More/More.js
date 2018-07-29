@@ -2,10 +2,7 @@ import React from 'react';
 import Link from 'gatsby-link';
 import Text from '../Text';
 import './more.css';
-
-const locale = {
-  seeMore: 'See more',
-};
+import locale from '../../locale';
 
 const More = () => (
   <Link to="/show-more" className="see-more">

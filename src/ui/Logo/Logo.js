@@ -1,14 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Text from '../Text';
+import locale from '../../locale';
 
 import './logo.css';
-
-const locale = {
-  brandName: 'Nimax',
-  instagram: '@nimax_agency',
-  brandHref: 'http://nimax.com',
-};
 
 const Logo = ({ href }) => (
   <a
