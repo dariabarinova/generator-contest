@@ -12,7 +12,7 @@ const Logo = ({ href }) => (
     className="logo"
   >
     <div className="logo-icon">
-      <Icon type="nimax" />
+      <Icon type="logo" />
     </div>
     <div className="logo-text-wrapper">
       <div className="logo-title">

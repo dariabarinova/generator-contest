@@ -1,7 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import cx from 'classnames';
+import iconTypes from './iconTypes';
 import './icon.css';
+import './icons.css';
 
 const Icon = ({ type, inlineBlock, va }) => {
   const style = va
@@ -21,7 +23,7 @@ const Icon = ({ type, inlineBlock, va }) => {
 };
 
 Icon.propTypes = {
-  type: PropTypes.string.isRequired,
+  type: PropTypes.oneOf(iconTypes).isRequired,
   inlineBlock: PropTypes.bool,
   va: PropTypes.number,
 };
@@ -31,4 +33,5 @@ Icon.defaultProps = {
   va: 0,
 };
 
+export { iconTypes };
 export default Icon;

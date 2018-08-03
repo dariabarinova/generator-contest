@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './reportList.css';
+import './repostList.css';
 
 const RepostListItem = ({ children }) => (
   <div className="repost-list-item">

@@ -9,8 +9,9 @@ import NimaxPromo from './NimaxPromo/NimaxPromo';
 import BlackBox from './BlackBox/BlackBox';
 import Button from './Button/Button';
 import Popover from './Popover/Popover';
-import Icon from './Icon/Icon';
-import RepostList, { RepostListItem } from './ReportList/RepostList';
+import Icon, { iconTypes } from './Icon/Icon';
+import RepostList, { RepostListItem } from './RepostList/RepostList';
+import LikeRepost from './LikeRepost/LikeRepost';
 
 export {
   Logo,
@@ -24,4 +25,6 @@ export {
   Icon,
   RepostList,
   RepostListItem,
+  LikeRepost,
+  iconTypes,
 };

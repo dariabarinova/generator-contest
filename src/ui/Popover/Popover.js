@@ -1,36 +1,79 @@
-import React from 'react';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import cx from 'classnames';
 import './popover.css';
 
-const Popover = ({
-  children,
-  theme,
-}) => (
-  <div
-    className={cx(
-      'popover', {
-        [`popover-theme--${theme}`]: theme,
-      },
-    )}
-  >
-    {children}
-    <span className="popover-arrow" />
-  </div>
-);
 
-Popover.propTypes = {
-  children: PropTypes.oneOfType([
-    PropTypes.element.isRequired,
-    PropTypes.arrayOf(
+export default class Popover extends Component {
+  static propTypes = {
+    children: PropTypes.oneOfType([
       PropTypes.element.isRequired,
-    ).isRequired,
-  ]).isRequired,
-  theme: PropTypes.string,
-};
+      PropTypes.arrayOf(
+        PropTypes.element.isRequired,
+      ).isRequired,
+    ]).isRequired,
+    storeSize: PropTypes.func.isRequired,
+    position: PropTypes.shape({
+      top: PropTypes.number.isRequired,
+      left: PropTypes.number.isRequired,
+    }).isRequired,
+    theme: PropTypes.string,
+    visible: PropTypes.bool,
+    onMouseEnter: PropTypes.func,
+    onMouseLeave: PropTypes.func,
+  };
 
-Popover.defaultProps = {
-  theme: 'default',
-};
+  static defaultProps = {
+    theme: 'default',
+    visible: false,
+    onMouseEnter: null,
+    onMouseLeave: null,
+  };
 
-export default Popover;
+  componentDidMount() {
+    const { storeSize } = this.props;
+    storeSize(
+      this.getSize(),
+    );
+  }
+
+  componentDidUpdate() {
+  }
+
+  getSize = () => {
+    const { width, height } = this.ref.getBoundingClientRect();
+    return { width, height };
+  }
+
+  storeRef = (ref) => {
+    this.ref = ref;
+  };
+
+  render() {
+    const {
+      children,
+      theme,
+      position,
+      visible,
+      onMouseEnter,
+      onMouseLeave,
+    } = this.props;
+    return (
+      <div
+        ref={this.storeRef}
+        onMouseEnter={onMouseEnter}
+        onMouseLeave={onMouseLeave}
+        className={cx(
+          'popover', {
+            [`popover-theme--${theme}`]: theme,
+            'popover-hidden': !visible,
+          },
+        )}
+        style={{ ...position }}
+      >
+        {children}
+        <span className="popover-arrow" />
+      </div>
+    );
+  }
+}

@@ -1,8 +1,15 @@
 .popover {
   border-radius: 1.4rem;
   padding: 1.3rem 1.8rem;
-  position: relative;
+  position: absolute;
   display: inline-block;
+  margin-top: -1.7rem;
+  transition: margin-top 0.5s, opacity 0.5s;
+}
+
+.popover-hidden {
+  margin-top: -0.7rem;
+  opacity: 0;
 }
 
 .popover-arrow {

@@ -3,32 +3,17 @@ import { Ui, locale } from '..';
 
 export default () => (
   <div>
-    <Ui.Popover>
-      <Ui.RepostList>
-        <Ui.RepostListItem key="vk">
-          <Ui.Text heavy fontSize={1.4}>
-            {'Вконтакте '}
-          </Ui.Text>
-          <Ui.Text fontSize={1.3}>
-            16
-          </Ui.Text>
-        </Ui.RepostListItem>
-        <Ui.RepostListItem key="fb">
-          <Ui.Text heavy fontSize={1.4}>
-            {'Фейсбук '}
-          </Ui.Text>
-          <Ui.Text fontSize={1.3}>
-            1 562
-          </Ui.Text>
-        </Ui.RepostListItem>
-      </Ui.RepostList>
-    </Ui.Popover>
-    <Ui.Popover theme="like">
-      <Ui.Icon type="heart" inlineBlock va={-0.15} />
-      <Ui.Text white fontSize={2.2}>
-        {' 10 156'}
-      </Ui.Text>
-    </Ui.Popover>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <Ui.LikeRepost />
     <Ui.Logo />
     <Ui.More />
     <Ui.MoreIdeas>
@@ -68,5 +53,10 @@ export default () => (
         </Ui.Text>
       </Ui.Button>
     </Ui.BlackBox>
+    {Ui.iconTypes
+      .filter(iconType => iconType.length === 2)
+      .map(iconType => (
+        <Ui.Icon key={iconType} type={iconType} inlineBlock />
+      ))}
   </div>
 );

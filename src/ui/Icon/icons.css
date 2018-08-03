@@ -1,0 +1,452 @@
+/*
+it's generated file, don't touch, just run
+$ npm run icons
+*/
+.icon.icon--arrow {
+  background: url(./images/arrow.png) no-repeat;
+  background-size: 1.5rem 0.7rem;
+  width: 1.5rem;
+  height: 0.7rem;
+}
+
+@media
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 120dpi) {
+  .icon.icon--arrow {
+    background: url(./images@2x/arrow.png) no-repeat;
+    background-size: 1.5rem 0.7rem;
+  }
+}
+
+.icon.icon--heart {
+  background: url(./images/heart.png) no-repeat;
+  background-size: 1.9rem 1.8rem;
+  width: 1.9rem;
+  height: 1.8rem;
+}
+
+@media
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 120dpi) {
+  .icon.icon--heart {
+    background: url(./images@2x/heart.png) no-repeat;
+    background-size: 1.9rem 1.8rem;
+  }
+}
+
+.icon.icon--logo-large {
+  background: url(./images/logo-large.png) no-repeat;
+  background-size: 5.8rem 2.4rem;
+  width: 5.8rem;
+  height: 2.4rem;
+}
+
+@media
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 120dpi) {
+  .icon.icon--logo-large {
+    background: url(./images@2x/logo-large.png) no-repeat;
+    background-size: 5.8rem 2.4rem;
+  }
+}
+
+.icon.icon--logo {
+  background: url(./images/logo.png) no-repeat;
+  background-size: 2.9rem 3.8rem;
+  width: 2.9rem;
+  height: 3.8rem;
+}
+
+@media
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 120dpi) {
+  .icon.icon--logo {
+    background: url(./images@2x/logo.png) no-repeat;
+    background-size: 2.9rem 3.8rem;
+  }
+}
+
+.icon.icon--poster {
+  background: url(./images/poster.png) no-repeat;
+  background-size: 47.7rem 67.5rem;
+  width: 47.7rem;
+  height: 67.5rem;
+}
+
+@media
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 120dpi) {
+  .icon.icon--poster {
+    background: url(./images@2x/poster.png) no-repeat;
+    background-size: 47.7rem 67.5rem;
+  }
+}
+
+.icon.icon--☺️ {
+  background: url(./images/☺️.png) no-repeat;
+  background-size: 4.1rem 4.1rem;
+  width: 4.1rem;
+  height: 4.1rem;
+}
+
+@media
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 120dpi) {
+  .icon.icon--☺️ {
+    background: url(./images@2x/☺️.png) no-repeat;
+    background-size: 4.1rem 4.1rem;
+  }
+}
+
+.icon.icon--⭐️ {
+  background: url(./images/⭐️.png) no-repeat;
+  background-size: 4.1rem 4.1rem;
+  width: 4.1rem;
+  height: 4.1rem;
+}
+
+@media
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 120dpi) {
+  .icon.icon--⭐️ {
+    background: url(./images@2x/⭐️.png) no-repeat;
+    background-size: 4.1rem 4.1rem;
+  }
+}
+
+.icon.icon--🐯 {
+  background: url(./images/🐯.png) no-repeat;
+  background-size: 3.5rem 3.7rem;
+  width: 3.5rem;
+  height: 3.7rem;
+}
+
+@media
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 120dpi) {
+  .icon.icon--🐯 {
+    background: url(./images@2x/🐯.png) no-repeat;
+    background-size: 3.5rem 3.7rem;
+  }
+}
+
+.icon.icon--🐱 {
+  background: url(./images/🐱.png) no-repeat;
+  background-size: 4.1rem 4.1rem;
+  width: 4.1rem;
+  height: 4.1rem;
+}
+
+@media
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 120dpi) {
+  .icon.icon--🐱 {
+    background: url(./images@2x/🐱.png) no-repeat;
+    background-size: 4.1rem 4.1rem;
+  }
+}
+
+.icon.icon--👍 {
+  background: url(./images/👍.png) no-repeat;
+  background-size: 3.9rem 4.1rem;
+  width: 3.9rem;
+  height: 4.1rem;
+}
+
+@media
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 120dpi) {
+  .icon.icon--👍 {
+    background: url(./images@2x/👍.png) no-repeat;
+    background-size: 3.9rem 4.1rem;
+  }
+}
+
+.icon.icon--💎 {
+  background: url(./images/💎.png) no-repeat;
+  background-size: 4.1rem 4.1rem;
+  width: 4.1rem;
+  height: 4.1rem;
+}
+
+@media
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 120dpi) {
+  .icon.icon--💎 {
+    background: url(./images@2x/💎.png) no-repeat;
+    background-size: 4.1rem 4.1rem;
+  }
+}
+
+.icon.icon--💩 {
+  background: url(./images/💩.png) no-repeat;
+  background-size: 4.1rem 4.1rem;
+  width: 4.1rem;
+  height: 4.1rem;
+}
+
+@media
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 120dpi) {
+  .icon.icon--💩 {
+    background: url(./images@2x/💩.png) no-repeat;
+    background-size: 4.1rem 4.1rem;
+  }
+}
+
+.icon.icon--🔥 {
+  background: url(./images/🔥.png) no-repeat;
+  background-size: 3.3rem 4.1rem;
+  width: 3.3rem;
+  height: 4.1rem;
+}
+
+@media
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 120dpi) {
+  .icon.icon--🔥 {
+    background: url(./images@2x/🔥.png) no-repeat;
+    background-size: 3.3rem 4.1rem;
+  }
+}
+
+.icon.icon--🔮 {
+  background: url(./images/🔮.png) no-repeat;
+  background-size: 3.6rem 4.1rem;
+  width: 3.6rem;
+  height: 4.1rem;
+}
+
+@media
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 120dpi) {
+  .icon.icon--🔮 {
+    background: url(./images@2x/🔮.png) no-repeat;
+    background-size: 3.6rem 4.1rem;
+  }
+}
+
+.icon.icon--😇 {
+  background: url(./images/😇.png) no-repeat;
+  background-size: 4.1rem 4.1rem;
+  width: 4.1rem;
+  height: 4.1rem;
+}
+
+@media
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 120dpi) {
+  .icon.icon--😇 {
+    background: url(./images@2x/😇.png) no-repeat;
+    background-size: 4.1rem 4.1rem;
+  }
+}
+
+.icon.icon--😈 {
+  background: url(./images/😈.png) no-repeat;
+  background-size: 4.1rem 4rem;
+  width: 4.1rem;
+  height: 4rem;
+}
+
+@media
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 120dpi) {
+  .icon.icon--😈 {
+    background: url(./images@2x/😈.png) no-repeat;
+    background-size: 4.1rem 4rem;
+  }
+}
+
+.icon.icon--😊 {
+  background: url(./images/😊.png) no-repeat;
+  background-size: 4.1rem 4.1rem;
+  width: 4.1rem;
+  height: 4.1rem;
+}
+
+@media
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 120dpi) {
+  .icon.icon--😊 {
+    background: url(./images@2x/😊.png) no-repeat;
+    background-size: 4.1rem 4.1rem;
+  }
+}
+
+.icon.icon--😋 {
+  background: url(./images/😋.png) no-repeat;
+  background-size: 4.1rem 4.1rem;
+  width: 4.1rem;
+  height: 4.1rem;
+}
+
+@media
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 120dpi) {
+  .icon.icon--😋 {
+    background: url(./images@2x/😋.png) no-repeat;
+    background-size: 4.1rem 4.1rem;
+  }
+}
+
+.icon.icon--😌 {
+  background: url(./images/😌.png) no-repeat;
+  background-size: 4.1rem 4.1rem;
+  width: 4.1rem;
+  height: 4.1rem;
+}
+
+@media
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 120dpi) {
+  .icon.icon--😌 {
+    background: url(./images@2x/😌.png) no-repeat;
+    background-size: 4.1rem 4.1rem;
+  }
+}
+
+.icon.icon--😍 {
+  background: url(./images/😍.png) no-repeat;
+  background-size: 4.1rem 4.1rem;
+  width: 4.1rem;
+  height: 4.1rem;
+}
+
+@media
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 120dpi) {
+  .icon.icon--😍 {
+    background: url(./images@2x/😍.png) no-repeat;
+    background-size: 4.1rem 4.1rem;
+  }
+}
+
+.icon.icon--😎 {
+  background: url(./images/😎.png) no-repeat;
+  background-size: 4.1rem 4.1rem;
+  width: 4.1rem;
+  height: 4.1rem;
+}
+
+@media
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 120dpi) {
+  .icon.icon--😎 {
+    background: url(./images@2x/😎.png) no-repeat;
+    background-size: 4.1rem 4.1rem;
+  }
+}
+
+.icon.icon--😘 {
+  background: url(./images/😘.png) no-repeat;
+  background-size: 4.1rem 4.1rem;
+  width: 4.1rem;
+  height: 4.1rem;
+}
+
+@media
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 120dpi) {
+  .icon.icon--😘 {
+    background: url(./images@2x/😘.png) no-repeat;
+    background-size: 4.1rem 4.1rem;
+  }
+}
+
+.icon.icon--😸 {
+  background: url(./images/😸.png) no-repeat;
+  background-size: 4.1rem 4rem;
+  width: 4.1rem;
+  height: 4rem;
+}
+
+@media
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 120dpi) {
+  .icon.icon--😸 {
+    background: url(./images@2x/😸.png) no-repeat;
+    background-size: 4.1rem 4rem;
+  }
+}
+
+.icon.icon--😺 {
+  background: url(./images/😺.png) no-repeat;
+  background-size: 4.1rem 4rem;
+  width: 4.1rem;
+  height: 4rem;
+}
+
+@media
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 120dpi) {
+  .icon.icon--😺 {
+    background: url(./images@2x/😺.png) no-repeat;
+    background-size: 4.1rem 4rem;
+  }
+}
+
+.icon.icon--😻 {
+  background: url(./images/😻.png) no-repeat;
+  background-size: 4.1rem 4rem;
+  width: 4.1rem;
+  height: 4rem;
+}
+
+@media
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 120dpi) {
+  .icon.icon--😻 {
+    background: url(./images@2x/😻.png) no-repeat;
+    background-size: 4.1rem 4rem;
+  }
+}
+
+.icon.icon--😽 {
+  background: url(./images/😽.png) no-repeat;
+  background-size: 4.1rem 4rem;
+  width: 4.1rem;
+  height: 4rem;
+}
+
+@media
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 120dpi) {
+  .icon.icon--😽 {
+    background: url(./images@2x/😽.png) no-repeat;
+    background-size: 4.1rem 4rem;
+  }
+}
+
+.icon.icon--🙆 {
+  background: url(./images/🙆.png) no-repeat;
+  background-size: 4.1rem 4.1rem;
+  width: 4.1rem;
+  height: 4.1rem;
+}
+
+@media
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 120dpi) {
+  .icon.icon--🙆 {
+    background: url(./images@2x/🙆.png) no-repeat;
+    background-size: 4.1rem 4.1rem;
+  }
+}
+
+.icon.icon--🤗 {
+  background: url(./images/🤗.png) no-repeat;
+  background-size: 4.1rem 4.1rem;
+  width: 4.1rem;
+  height: 4.1rem;
+}
+
+@media
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 120dpi) {
+  .icon.icon--🤗 {
+    background: url(./images@2x/🤗.png) no-repeat;
+    background-size: 4.1rem 4.1rem;
+  }
+}
+

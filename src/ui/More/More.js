@@ -10,7 +10,7 @@ const More = () => (
     <span className="see-more-wrapper">
       <span className="see-more-icon-wrapper">
         <span className="see-more-icon">
-          <Icon type="see-more" />
+          <Icon type="arrow" />
         </span>
       </span>
       <span className="see-more-text">

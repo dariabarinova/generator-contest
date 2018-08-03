@@ -2,6 +2,8 @@
   height: 5.3rem;
   border-radius: 3.2rem;
   padding: 0 4.5rem;
+  display: inline-block;
+  transition: background 0.1s, border 0.1s;
 }
 
 .button-theme--default {
