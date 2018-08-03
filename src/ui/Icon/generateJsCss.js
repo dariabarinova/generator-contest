@@ -54,7 +54,8 @@ files.forEach(({ filename, width, height }) => {
 
 js += `];
 
-export default types;`;
+export default types;
+`;
 
 fs.writeFileSync(path.resolve(__dirname, resultCssFilename), css);
 fs.writeFileSync(path.resolve(__dirname, resultJsFilename), js);

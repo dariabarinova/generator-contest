@@ -13,6 +13,8 @@ export default () => (
     <br />
     <br />
     <br />
+    <br />
+    <br />
     <Ui.LikeRepost />
     <Ui.Logo />
     <Ui.More />
