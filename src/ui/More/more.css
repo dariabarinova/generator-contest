@@ -11,7 +11,7 @@
 .see-more-icon-wrapper {
   display: flex;
   justify-content: center;
-  margin: 0 0 .6em;
+  margin: 0 0 0.6em;
 }
 
 .see-more-icon {
@@ -24,6 +24,7 @@
   border-radius: 2.5rem;
 }
 
+/*
 .see-more-text {
-
 }
+*/

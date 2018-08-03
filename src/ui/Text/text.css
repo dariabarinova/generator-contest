@@ -1,44 +1,50 @@
 @font-face {
-  font-family: SF Pro Text;
+  font-family: 'SF Pro Text Regular';
   src: url(./fonts/SF-Pro-Text-Regular.otf);
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-  font-family: SF Pro Text;
+  font-family: 'SF Pro Text Heavy';
   src: url(./fonts/SF-Pro-Text-Heavy.otf);
-  font-weight: 1000;
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-  font-family: SF Pro Text;
+  font-family: 'SF Pro Text Heavy Italic';
   src: url(./fonts/SF-Pro-Text-HeavyItalic.otf);
-  font-weight: 1000;
-  font-style: italic;
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-  font-family: SF Pro Text;
+  font-family: 'SF Pro Text Bold';
   src: url(./fonts/SF-Pro-Text-Bold.otf);
-  font-weight: 700;
+  font-weight: normal;
+  font-style: normal;
 }
 
 .text {
-  font-family: SF Pro Text;
+  font-family: 'SF Pro Text Regular', sans-serif;
   font-size: 2rem;
+  font-weight: normal;
+  font-style: normal;
 }
 
 .text-heavy {
-  font-weight: 1000;
+  font-family: 'SF Pro Text Heavy', sans-serif;
 }
 
 .text-bold {
-  font-weight: 700;
+  font-family: 'SF Pro Text Bold', sans-serif;
+}
+
+.text-heavy.text-italic {
+  font-family: 'SF Pro Text Heavy Italic', sans-serif;
 }
 
 .text-block {
   display: block;
-}
-
-.text-italic {
-  font-style: italic;
 }

@@ -3,7 +3,7 @@
 }
 
 body {
-  background: #C92A89;
+  background: #c92a89;
   line-height: 1.212;
 }
 
@@ -17,14 +17,13 @@ html {
   }
 } */
 
-
 a {
   text-decoration: none;
   color: inherit;
 }
 
 a:hover {
-  opacity: .7;
+  opacity: 0.7;
 }
 
 button {
