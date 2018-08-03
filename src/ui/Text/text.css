@@ -48,3 +48,11 @@
 .text-block {
   display: block;
 }
+
+.text-white {
+  color: #fff;
+}
+
+.text-ls {
+  letter-spacing: 0.12rem;
+}

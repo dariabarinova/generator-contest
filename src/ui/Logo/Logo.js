@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import Text from '../Text';
 import locale from '../../locale';
 
+import Icon from '../Icon/Icon';
 import './logo.css';
 
 const Logo = ({ href }) => (
@@ -11,16 +12,16 @@ const Logo = ({ href }) => (
     className="logo"
   >
     <div className="logo-icon">
-      <span className="icon icon-nimax" />
+      <Icon type="nimax" />
     </div>
     <div className="logo-text-wrapper">
       <div className="logo-title">
-        <Text heavy>
+        <Text heavy white>
           {locale.brandName}
         </Text>
       </div>
       <div className="logo-instagram">
-        <Text>
+        <Text white>
           {locale.instagram}
         </Text>
       </div>

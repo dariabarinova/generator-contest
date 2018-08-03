@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'gatsby-link';
 import Text from '../Text';
+import Icon from '../Icon/Icon';
 import './more.css';
 import locale from '../../locale';
 
@@ -9,7 +10,7 @@ const More = () => (
     <span className="see-more-wrapper">
       <span className="see-more-icon-wrapper">
         <span className="see-more-icon">
-          <span className="icon icon-see-more" />
+          <Icon type="see-more" />
         </span>
       </span>
       <span className="see-more-text">

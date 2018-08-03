@@ -1,0 +1,13 @@
+.repost-list {
+  /* padding: 1.3rem 1.8rem; */
+  width: 12.4rem;
+  margin: 1.4rem 0.9rem 1.7rem;
+}
+
+.repost-list-item {
+  margin: 0 0 1.5rem;
+}
+
+.repost-list-item:last-child {
+  margin-bottom: 0;
+}

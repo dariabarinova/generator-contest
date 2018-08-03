@@ -2,7 +2,7 @@ const locale = {
   brandName: 'Nimax',
   instagram: '@nimax_agency',
   seeMore: 'See more',
-  brandHref: 'http://nimax.com',
+  brandHref: '',
   lines: [
     { text: 'Не хотите придумывать сами,', fontSize: 1.24 },
     { text: 'обращайтесь в', fontSize: 2.44 },

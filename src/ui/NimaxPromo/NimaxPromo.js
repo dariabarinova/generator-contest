@@ -23,7 +23,12 @@ const NimaxPromo = () => (
         const Component = highlighted ? Wrapper : EmptyComponent;
         return (
           <Component key={text}>
-            <Text fontSize={fontSize} heavy italic>
+            <Text
+              white={highlighted}
+              fontSize={fontSize}
+              heavy
+              italic
+            >
               {text}
             </Text>
           </Component>

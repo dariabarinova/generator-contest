@@ -12,6 +12,8 @@ const Text = (props) => {
     fontSize,
     italic,
     block,
+    white,
+    ls,
   } = props;
   const fontSizeStyle = fontSize
     ? { style: { fontSize: `${fontSize}rem` } }
@@ -23,6 +25,8 @@ const Text = (props) => {
         'text-bold': bold,
         'text-block': block,
         'text-italic': italic,
+        'text-white': white,
+        'text-ls': ls,
       })}
       {...fontSizeStyle}
     >
@@ -38,6 +42,8 @@ Text.propTypes = {
   fontSize: PropTypes.number,
   block: PropTypes.bool,
   italic: PropTypes.bool,
+  white: PropTypes.bool,
+  ls: PropTypes.bool,
 };
 
 Text.defaultProps = {
@@ -46,6 +52,8 @@ Text.defaultProps = {
   fontSize: null,
   block: false,
   italic: false,
+  white: false,
+  ls: false,
 };
 
 export default Text;
