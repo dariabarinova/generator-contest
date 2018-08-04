@@ -39,3 +39,11 @@
 .more-ideas-large .more-ideas-wrapper1 {
   border-radius: 27.9rem;
 }
+
+.more-ideas:hover {
+  border-color: rgba(255, 255, 255, 0.7);
+}
+
+.more-ideas:hover .more-ideas-wrapper1 {
+  background: rgba(255, 255, 255, 0.7);
+}

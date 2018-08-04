@@ -14,12 +14,8 @@
   line-height: 1.1;
 }
 
-.nimax-promo:hover {
-  opacity: 1;
-}
-
 .nimax-promo:hover .nimax-promo-highlighter {
-  opacity: 0.7;
+  background: rgba(0, 0, 0, 0.7);
 }
 
 .nimax-promo-wrapper *:nth-child(1) { margin-bottom: 0.2rem; }

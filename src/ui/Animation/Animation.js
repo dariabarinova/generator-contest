@@ -4,11 +4,23 @@ import animations from './animations';
 
 const animationTypes = Object.keys(animations);
 
-const Animation = ({ type }) => (
-  <img
-    src={animations[type].gif}
-  />
-);
+const Animation = ({ type }) => {
+  const {
+    gif,
+    width,
+    height,
+  } = animations[type];
+  return (
+    <img
+      alt="animation"
+      src={gif}
+      style={{
+        width,
+        height,
+      }}
+    />
+  );
+};
 
 Animation.propTypes = {
   type: PropTypes.oneOf(
