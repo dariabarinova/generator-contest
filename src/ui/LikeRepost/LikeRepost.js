@@ -4,13 +4,7 @@ import Text from '../Text/Text';
 import Popover from '../Popover/Popover';
 import Icon from '../Icon/Icon';
 import RepostList, { RepostListItem } from '../RepostList/RepostList';
-import PopoverPositionProvider from './PopoverPositionProvider';
 import './likeRepost.css';
-
-const popoverTypes = {
-  like: 'like',
-  repost: 'repost',
-};
 
 const locale = {
   like: 'Лайк',
@@ -51,12 +45,6 @@ export default class LikeRepost extends Component {
     }, 300);
   }
 
-  getRefFactory = type => () => this[`${type}_ref`];
-
-  storeRefFactory = type => (ref) => {
-    this[`${type}_ref`] = ref;
-  };
-
   renderLikePopoverContent = () => [
     <Icon key={0} type="heart" inlineBlock va={-0.15} />,
     <Text key={1} white fontSize={2.2}>
@@ -92,55 +80,35 @@ export default class LikeRepost extends Component {
     } = this.state;
     return (
       <div className="like-repost">
-        <div
-          className="like-repost-handler"
-          ref={this.storeRefFactory(popoverTypes.like)}
-        >
+        <div className="like-repost-handler">
           <Text fontSize={2} heavy white>
             {locale.like}
           </Text>
+          <div className="like-repost-popover-wrapper">
+            <Popover
+              theme="like"
+              visible={isLikePopoverVisible}
+            >
+              {this.renderLikePopoverContent()}
+            </Popover>
+          </div>
         </div>
         <div
           className="like-repost-handler"
-          ref={this.storeRefFactory(popoverTypes.repost)}
           onMouseEnter={this.onMouseEnterRepost}
           onMouseLeave={this.onMouseLeaveRepost}
         >
           <Text fontSize={2} heavy white>
             {locale.repost}
           </Text>
-        </div>
-        <PopoverPositionProvider
-          key={popoverTypes.repost}
-          getRef={this.getRefFactory(popoverTypes.repost)}
-        >
-          {({ position, storeSize }) => (
+          <div className="like-repost-popover-wrapper">
             <Popover
               visible={isRepostPopoverVisible}
-              storeSize={storeSize}
-              position={position}
-              onMouseEnter={this.onMouseEnterRepostPopover}
-              onMouseLeave={this.onMouseLeaveRepost}
             >
               {this.renderRepostPopoverContent()}
             </Popover>
-          )}
-        </PopoverPositionProvider>
-        <PopoverPositionProvider
-          key={popoverTypes.like}
-          getRef={this.getRefFactory(popoverTypes.like)}
-        >
-          {({ position, storeSize }) => (
-            <Popover
-              theme="like"
-              visible={isLikePopoverVisible}
-              storeSize={storeSize}
-              position={position}
-            >
-              {this.renderLikePopoverContent()}
-            </Popover>
-          )}
-        </PopoverPositionProvider>
+          </div>
+        </div>
       </div>
     );
   }

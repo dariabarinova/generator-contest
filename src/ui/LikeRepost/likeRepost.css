@@ -2,3 +2,17 @@
   display: flex;
   justify-content: space-around;
 }
+
+.like-repost-handler {
+  position: relative;
+}
+
+.like-repost-popover-wrapper {
+  position: absolute;
+  bottom: calc(100% + 1.2rem);
+  left: 50%;
+  width: 200px;
+  margin-left: -100px;
+  display: flex;
+  justify-content: center;
+}
