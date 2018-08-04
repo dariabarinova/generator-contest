@@ -6,13 +6,14 @@ import More from './More/More';
 import Text from './Text';
 import MoreIdeas from './MoreIdeas/MoreIdeas';
 import NimaxPromo from './NimaxPromo/NimaxPromo';
-import BlackBox from './BlackBox/BlackBox';
+import Background from './Background/Background';
 import Button from './Button/Button';
 import Popover from './Popover/Popover';
 import Icon, { iconTypes } from './Icon/Icon';
 import RepostList, { RepostListItem } from './RepostList/RepostList';
 import LikeRepost from './LikeRepost/LikeRepost';
 import RangeSlider from './RangeSlider/RangeSlider';
+import Animation, { animationTypes } from './Animation/Animation';
 
 export {
   Logo,
@@ -20,7 +21,7 @@ export {
   Text,
   MoreIdeas,
   NimaxPromo,
-  BlackBox,
+  Background,
   Button,
   Popover,
   Icon,
@@ -29,4 +30,6 @@ export {
   LikeRepost,
   iconTypes,
   RangeSlider,
+  Animation,
+  animationTypes,
 };
