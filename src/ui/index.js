@@ -12,6 +12,7 @@ import Popover from './Popover/Popover';
 import Icon, { iconTypes } from './Icon/Icon';
 import RepostList, { RepostListItem } from './RepostList/RepostList';
 import LikeRepost from './LikeRepost/LikeRepost';
+import RangeSlider from './RangeSlider/RangeSlider';
 
 export {
   Logo,
@@ -27,4 +28,5 @@ export {
   RepostListItem,
   LikeRepost,
   iconTypes,
+  RangeSlider,
 };

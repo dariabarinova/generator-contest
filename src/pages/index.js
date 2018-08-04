@@ -1,8 +1,25 @@
 import React from 'react';
-import { Ui, locale } from '..';
+import { Ui, locale, Components } from '..';
 
 export default () => (
   <div>
+    <Components.RangeSliderDataProvider>
+      {({
+        position,
+        onStart,
+        onDrag,
+        onStop,
+        storeRef,
+      }) => (
+        <Ui.RangeSlider
+          position={position}
+          onStart={onStart}
+          onDrag={onDrag}
+          onStop={onStop}
+          storeRef={storeRef}
+        />
+      )}
+    </Components.RangeSliderDataProvider>
     <br />
     <br />
     <br />
