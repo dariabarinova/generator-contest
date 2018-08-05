@@ -2,11 +2,13 @@
   border-radius: 1.4rem;
   padding: 1.3rem 1.8rem;
   display: inline-block;
-  transition: margin-top 0.5s, opacity 0.5s;
+  position: relative;
+  transition: margin-bottom 0.5s, opacity 0.5s;
+  margin-bottom: 1rem;
 }
 
 .popover-hidden {
-  margin-top: -0.7rem;
+  margin-bottom: 0;
   opacity: 0;
 }
 
