@@ -39,6 +39,7 @@ const Animation = ({ type }) => {
     gif,
     webm,
     mp4,
+    png,
     width,
     height,
   } = animations[type];
@@ -46,12 +47,16 @@ const Animation = ({ type }) => {
 
   if (webm) {
     return (
+      /* eslint-disable jsx-a11y/media-has-caption */
       <video
+        playsinline
+        muted
         autoPlay
         loop
+        poster={png}
         style={overridenSize || { width, height }}
       >
-        {/* <source src={mp4} type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' /> */}
+        {/* <source src={mp4} type="video/mp4" /> */}
         <source src={webm} type="video/webm;" />
       </video>
     );

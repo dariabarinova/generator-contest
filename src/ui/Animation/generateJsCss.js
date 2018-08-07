@@ -1,69 +1,67 @@
 const fs = require('fs');
 const path = require('path');
 const getImageSize = require('image-size');
-const _ = require('lodash');
+// const _ = require('lodash');
 
 const rem = 10;
 const folderName = 'animations';
 const folder = path.resolve(__dirname, folderName);
 const resultJsFilename = 'animations.js';
 
+const filterByType = type => filename => filename.indexOf(type) !== -1;
+const toFilename = filename => ({ filename });
+const appendSize = filename => ({
+  filename,
+  ...getImageSize(path.resolve(folder, filename)),
+});
+
 let js = `// it's generated file, don't touch, just run
 // $ npm run animations
 
 `;
 
-const gifFiles = fs
-  .readdirSync(folder)
-  .filter(filename => (
-    filename.indexOf('gif') !== -1
-  ))
-  .map(filename => ({
-    filename,
-    ...getImageSize(path.resolve(folder, filename)),
-  }));
+const types = ['gif', 'webp', 'webm', 'mp4', 'png'];
 
-const webpFiles = fs
-  .readdirSync(folder)
-  .filter(filename => (
-    filename.indexOf('webp') !== -1
-  ))
-  .map(filename => ({
-    filename,
-    ...getImageSize(path.resolve(folder, filename)),
-  }));
+const files = types.reduce((acc, fileType) => ({
+  ...acc,
+  [fileType]: fs
+    .readdirSync(folder)
+    .filter(filterByType(fileType))
+    .map(
+      fileType === 'gif'
+        ? appendSize
+        : toFilename,
+    ),
+}), {});
 
-const webmFiles = fs
-  .readdirSync(folder)
-  .filter(filename => (
-    filename.indexOf('webm') !== -1
-  ))
-  .map(filename => ({
-    filename,
-  }));
-
-const mp4Files = fs
-  .readdirSync(folder)
-  .filter(filename => (
-    filename.indexOf('mp4') !== -1
-  ))
-  .map(filename => ({
-    filename,
-  }));
-
-gifFiles.forEach(({ filename }, index) => {
-  const webpFilename = webpFiles[index].filename;
-  const webmFiname = webmFiles[index].filename;
-  const mp4Finame = mp4Files[index].filename;
-  js += `import gif${filename.replace('.gif', '')} from './${folderName}/${filename}';
-`;
-  js += `import webp${webpFilename.replace('.webp', '')} from './${folderName}/${webpFilename}';
-`;
-  js += `import webm${webmFiname.replace('.webm', '')} from './${folderName}/${webmFiname}';
-`;
-  js += `import mp4${mp4Finame.replace('.mp4', '')} from './${folderName}/${mp4Finame}';
-`;
+const getFilenames = i => ({
+  gif: files.gif[i].filename,
+  webp: files.webp[i].filename,
+  webm: files.webm[i].filename,
+  mp4: files.mp4[i].filename,
+  png: files.png[i].filename,
 });
+
+
+for (let i = 0; i < files.gif.length; i += 1) {
+  const {
+    gif,
+    webp,
+    webm,
+    mp4,
+    png,
+  } = getFilenames(i);
+  js += `import gif${gif.replace('.gif', '')} from './${folderName}/${gif}';
+`;
+  js += `import webp${webp.replace('.webp', '')} from './${folderName}/${webp}';
+`;
+  js += `import webm${webm.replace('.webm', '')} from './${folderName}/${webm}';
+`;
+  js += `import mp4${mp4.replace('.mp4', '')} from './${folderName}/${mp4}';
+`;
+  js += `import png${png.replace('.png', '')} from './${folderName}/${png}';
+`;
+}
 
 js += `
 `;
@@ -71,21 +69,25 @@ js += `
 js += `
 const animations = {`;
 
-
-gifFiles.forEach(({ filename, width, height }, index) => {
-  const webpFilename = webpFiles[index].filename;
-  const webmFilename = webmFiles[index].filename;
-  const mp4Filename = mp4Files[index].filename;
+for (let i = 0; i < files.gif.length; i += 1) {
+  const {
+    gif,
+    webp,
+    webm,
+    mp4,
+    png,
+  } = getFilenames(i);
   js += `
-  ${filename.replace('.gif', '')}: {
-    gif: gif${filename.replace('.gif', '')},
-    webp: webp${webpFilename.replace('.webp', '')},
-    webm: webm${webmFilename.replace('.webm', '')},
-    mp4: mp4${mp4Filename.replace('.mp4', '')},
-    width: '${width / rem}rem',
-    height: '${height / rem}rem',
+  ${gif.replace('.gif', '')}: {
+    gif: gif${gif.replace('.gif', '')},
+    webp: webp${webp.replace('.webp', '')},
+    webm: webm${webm.replace('.webm', '')},
+    mp4: mp4${mp4.replace('.mp4', '')},
+    png: png${png.replace('.png', '')},
+    width: '${files.gif[i].width / rem}rem',
+    height: '${files.gif[i].height / rem}rem',
   },`;
-});
+}
 
 js += `
 };
