@@ -49,7 +49,7 @@ const Animation = ({ type }) => {
     return (
       /* eslint-disable jsx-a11y/media-has-caption */
       <video
-        playsinline
+        playsInline
         muted
         autoPlay
         loop

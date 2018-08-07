@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import cx from 'classnames';
 
+import { FontLoaderDecorator } from '../../components';
 import './text.css';
 
 const Text = (props) => {
@@ -14,10 +15,12 @@ const Text = (props) => {
     block,
     white,
     ls,
+    isFontLoaded,
   } = props;
-  const fontSizeStyle = fontSize
-    ? { style: { fontSize: `${fontSize}rem` } }
-    : {};
+
+  const style = {};
+  if (fontSize) style.fontSize = `${fontSize}rem`;
+
   return (
     <span
       className={cx('text', {
@@ -27,8 +30,9 @@ const Text = (props) => {
         'text-italic': italic,
         'text-white': white,
         'text-ls': ls,
+        'text-fallback': !isFontLoaded,
       })}
-      {...fontSizeStyle}
+      style={style}
     >
       {children}
     </span>
@@ -36,6 +40,7 @@ const Text = (props) => {
 };
 
 Text.propTypes = {
+  isFontLoaded: PropTypes.bool,
   children: PropTypes.string.isRequired,
   bold: PropTypes.bool,
   heavy: PropTypes.bool,
@@ -47,6 +52,7 @@ Text.propTypes = {
 };
 
 Text.defaultProps = {
+  isFontLoaded: true,
   bold: false,
   heavy: false,
   fontSize: null,
@@ -56,4 +62,4 @@ Text.defaultProps = {
   ls: false,
 };
 
-export default Text;
+export default FontLoaderDecorator(Text);

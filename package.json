@@ -16,7 +16,10 @@
     "gatsby": "^1.9.277",
     "gatsby-link": "^1.6.46",
     "lodash": "^4.17.10",
-    "react-draggable": "^3.0.5"
+    "react-draggable": "^3.0.5",
+    "react-redux": "^5.0.7",
+    "redux-logger": "^3.0.6",
+    "redux-saga": "^0.16.0"
   },
   "devDependencies": {
     "@babel/preset-stage-2": "^7.0.0-beta.55",
