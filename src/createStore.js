@@ -6,6 +6,7 @@ import {
 import logger from 'redux-logger';
 import createSagaMiddleware from 'redux-saga';
 
+import isClient from './isClient';
 import rootSaga from './rootSaga';
 import { fontLoadReducer } from './components';
 
@@ -19,7 +20,7 @@ const createStore = () => {
     reducer,
     applyMiddleware(sagaMiddleware, logger),
   );
-  sagaMiddleware.run(rootSaga);
+  if (isClient) sagaMiddleware.run(rootSaga);
   return store;
 };
 

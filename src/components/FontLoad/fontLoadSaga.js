@@ -6,8 +6,13 @@ function getOnFontLoadEventChannel() {
   return eventChannel((emitter) => {
     document.fonts.addEventListener('loadingdone', emitter);
 
+    const timeout = setTimeout(() => {
+      emitter('timeout');
+    }, 3000);
+
     return () => {
       document.fonts.removeEventListener('loadingdone', emitter);
+      clearTimeout(timeout);
     };
   });
 }

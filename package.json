@@ -13,11 +13,14 @@
   },
   "dependencies": {
     "classnames": "^2.2.6",
-    "gatsby": "^1.9.277",
-    "gatsby-link": "^1.6.46",
+    "gatsby": "^2.0.0-beta.83",
+    "gatsby-link": "^2.0.0-beta.17",
     "lodash": "^4.17.10",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
     "react-draggable": "^3.0.5",
     "react-redux": "^5.0.7",
+    "react-router-dom": "^4.3.1",
     "redux-logger": "^3.0.6",
     "redux-saga": "^0.16.0"
   },
