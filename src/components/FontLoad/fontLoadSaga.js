@@ -8,7 +8,7 @@ function getOnFontLoadEventChannel() {
 
     const timeout = setTimeout(() => {
       emitter('timeout');
-    }, 3000);
+    }, 30000);
 
     return () => {
       document.fonts.removeEventListener('loadingdone', emitter);

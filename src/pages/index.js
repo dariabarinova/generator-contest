@@ -2,7 +2,7 @@ import React from 'react';
 import { Ui, locale, Components } from '..';
 
 export default () => ([
-  <Ui.Background>
+  <Ui.Background key={0}>
     <Components.RangeSliderDataProvider>
       {({
         position,
@@ -51,7 +51,7 @@ export default () => ([
     <Ui.NimaxPromo />
   </Ui.Background>,
 
-  <Ui.Background theme="black">
+  <Ui.Background theme="black" key={1}>
     <Ui.Button theme="vk">
       <Ui.Text white heavy fontSize={1.4}>
         {'Вконтакте '}
@@ -74,12 +74,16 @@ export default () => ([
       </Ui.Text>
     </Ui.Button>
   </Ui.Background>,
-  Ui.iconTypes
-    .filter(iconType => iconType.length === 2)
-    .map(iconType => (
-      <Ui.Icon key={iconType} type={iconType} inlineBlock />
-    )),
-  Ui.animationTypes.map(type => (
-    <Ui.Animation key={type} type={type} />
-  )),
+  <Ui.Background key={2}>
+    {[
+      ...Ui.iconTypes
+        .filter(iconType => iconType.length === 2)
+        .map(iconType => (
+          <Ui.Icon key={iconType} type={iconType} inlineBlock />
+        )),
+      ...Ui.animationTypes.map(type => (
+        <Ui.Animation key={type} type={type} />
+      )),
+    ]}
+  </Ui.Background>,
 ]);
