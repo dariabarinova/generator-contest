@@ -1,7 +1,49 @@
+.wrapper-description {
+  position: absolute;
+  top: 42%;
+  right: 12%;
+}
+
 .description {
   text-shadow: 0 0 11px #fff;
   width: 38rem;
   text-align: center;
   line-height: 1.34;
   transform: rotate(14deg);
+}
+
+.description .text {
+  font-size: 4.7rem;
+}
+
+@media only screen and (max-width: 800px) {
+  .wrapper-description {
+    position: absolute;
+    top: 65%;
+    right: 10%;
+  }
+
+  .description {
+    width: 27rem;
+  }
+
+  .description .text {
+    font-size: 4rem;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .wrapper-description {
+    position: absolute;
+    top: 60%;
+    right: 15%;
+  }
+
+  .description {
+    width: 20rem;
+  }
+
+  .description .text {
+    font-size: 3rem;
+  }
 }

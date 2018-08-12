@@ -11,7 +11,7 @@ const rems = {
   [min]: 6,
 };
 
-const stepCount = 50;
+const stepCount = 10;
 
 const stepLen = (max - min) / stepCount;
 const stepValDelta = (rems[max] - rems[min]) / stepCount;

@@ -43,10 +43,10 @@ export default () => ([
       </Ui.Text>
     </Ui.MoreIdeas>
     <Ui.MoreIdeas large>
-      <Ui.Text fontSize={2.85} heavy italic block>
+      <Ui.Text heavy italic block>
         {locale.moreIdeasLarge}
       </Ui.Text>
-      <Ui.Text fontSize={5.2} heavy italic block>
+      <Ui.Text heavy italic block>
         {locale.moreIdeasLargeSubtitle}
       </Ui.Text>
     </Ui.MoreIdeas>

@@ -8,7 +8,7 @@ const locale = {
 
 const Description = () => (
   <div className="description">
-    <Text fontSize={4.7} white html={locale.description} />
+    <Text white html={locale.description} />
   </div>
 );
 
