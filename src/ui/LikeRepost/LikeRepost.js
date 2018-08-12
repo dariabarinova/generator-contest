@@ -17,30 +17,33 @@ export default class LikeRepost extends Component {
     this.state = {
       isLikePopoverVisible: true,
       isRepostPopoverVisible: false,
+      isRepostPopoverDisplayNode: true,
     };
   }
 
   onMouseEnterRepost = () => {
     if (this.hideTimeout) clearTimeout(this.hideTimeout);
+    if (this.displayTimeout) clearTimeout(this.displayTimeout);
     this.setState({
       isRepostPopoverVisible: true,
       isLikePopoverVisible: false,
+      isRepostPopoverDisplayNode: false,
     });
-  };
-
-  onMouseEnterRepostPopover = () => {
-    const { isRepostPopoverVisible } = this.state;
-    if (isRepostPopoverVisible) {
-      this.onMouseEnterRepost();
-    }
   };
 
   onMouseLeaveRepost = () => {
     if (this.hideTimeout) clearTimeout(this.hideTimeout);
+    if (this.displayTimeout) clearTimeout(this.displayTimeout);
     this.hideTimeout = setTimeout(() => {
       this.setState({
         isRepostPopoverVisible: false,
         isLikePopoverVisible: true,
+      }, () => {
+        this.displayTimeout = setTimeout(() => {
+          this.setState({
+            isRepostPopoverDisplayNode: true,
+          });
+        }, 500);
       });
     }, 300);
   }
@@ -55,18 +58,18 @@ export default class LikeRepost extends Component {
   renderRepostPopoverContent = () => (
     <RepostList>
       <RepostListItem key="vk">
-        <Text heavy fontSize={1.4}>
+        <Text className="repost-list-item-social-title" heavy>
           {'Вконтакте '}
         </Text>
-        <Text fontSize={1.3}>
+        <Text className="repost-list-item-social-value">
           16
         </Text>
       </RepostListItem>
       <RepostListItem key="fb">
-        <Text heavy fontSize={1.4}>
+        <Text heavy className="repost-list-item-social-title">
           {'Фейсбук '}
         </Text>
-        <Text fontSize={1.3}>
+        <Text className="repost-list-item-social-value">
           1 562
         </Text>
       </RepostListItem>
@@ -77,11 +80,12 @@ export default class LikeRepost extends Component {
     const {
       isLikePopoverVisible,
       isRepostPopoverVisible,
+      isRepostPopoverDisplayNode,
     } = this.state;
     return (
       <div className="like-repost">
         <div className="like-repost-handler">
-          <Text fontSize={2} heavy white>
+          <Text heavy white>
             {locale.like}
           </Text>
           <div className="like-repost-popover-wrapper">
@@ -98,12 +102,13 @@ export default class LikeRepost extends Component {
           onMouseEnter={this.onMouseEnterRepost}
           onMouseLeave={this.onMouseLeaveRepost}
         >
-          <Text fontSize={2} heavy white>
+          <Text heavy white>
             {locale.repost}
           </Text>
           <div className="like-repost-popover-wrapper">
             <Popover
               visible={isRepostPopoverVisible}
+              displayNone={isRepostPopoverDisplayNode}
             >
               {this.renderRepostPopoverContent()}
             </Popover>

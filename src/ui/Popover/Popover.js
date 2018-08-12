@@ -7,14 +7,18 @@ const Popover = ({
   children,
   theme,
   visible,
+  onMouseEnter,
+  displayNone,
 }) => (
   <div
     className={cx(
       'popover', {
         [`popover-theme--${theme}`]: theme,
-        'popover-hidden': !visible,
+        'popover--hidden': !visible,
+        'popover--dn': displayNone,
       },
     )}
+    onMouseEnter={onMouseEnter}
   >
     {children}
     <span className="popover-arrow" />
@@ -30,11 +34,15 @@ Popover.propTypes = {
   ]).isRequired,
   theme: PropTypes.string,
   visible: PropTypes.bool,
+  displayNone: PropTypes.bool,
+  onMouseEnter: PropTypes.func,
 };
 
 Popover.defaultProps = {
   theme: 'default',
   visible: false,
+  displayNone: false,
+  onMouseEnter: null,
 };
 
 export default Popover;

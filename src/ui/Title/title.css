@@ -1,0 +1,37 @@
+.title {
+  line-height: 1;
+  letter-spacing: 0.033rem;
+  text-shadow: 0 0 11px #fff;
+  transform: rotate(-21deg);
+  margin: 10rem 0 20rem;
+}
+
+.title-first,
+.title-second {
+  display: inline-block;
+  padding: 0 1rem;
+}
+
+.title-first {
+}
+
+.title-second {
+  position: relative;
+  margin-left: 14rem;
+}
+
+.title-second .text {
+  position: relative;
+  z-index: 2;
+}
+
+.title-second-bg {
+  background: #000;
+  display: block;
+  position: absolute;
+  top: 1rem;
+  left: 0;
+  right: 0;
+  bottom: -1rem;
+  z-index: 1;
+}

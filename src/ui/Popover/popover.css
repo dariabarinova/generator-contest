@@ -4,12 +4,16 @@
   display: inline-block;
   position: relative;
   transition: margin-bottom 0.5s, opacity 0.5s;
-  margin-bottom: 1rem;
+  margin-bottom: 1.2rem;
 }
 
-.popover-hidden {
+.popover--hidden {
   margin-bottom: 0;
   opacity: 0;
+}
+
+.popover--dn {
+  display: none;
 }
 
 .popover-arrow {
@@ -35,4 +39,14 @@
 
 .popover-theme--like .popover-arrow {
   border-top-color: #ec4756;
+}
+
+@media only screen and (max-width: 980px) {
+  .popover {
+    margin-bottom: 1.4rem;
+  }
+
+  .popover-hidden {
+    margin-bottom: 0;
+  }
 }

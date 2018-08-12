@@ -5,5 +5,10 @@
 
 .background--default {
   background-image: linear-gradient(-222deg, #a22fb9 0%, #d6297a 52%, #fc7619 100%);
-  padding: 3rem;
+}
+
+.background--fullScreen {
+  width: 100%;
+  height: 100%;
+  position: absolute;
 }

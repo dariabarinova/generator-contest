@@ -3,9 +3,14 @@ import PropTypes from 'prop-types';
 import cx from 'classnames';
 import './background.css';
 
-const Background = ({ children, theme }) => (
+const Background = ({ children, theme, fullScreen }) => (
   <div
-    className={cx('background', `background--${theme}`)}
+    className={cx(
+      'background',
+      `background--${theme}`, {
+        'background--fullScreen': fullScreen,
+      },
+    )}
   >
     {children}
   </div>
@@ -22,10 +27,12 @@ Background.propTypes = {
     'default',
     'black',
   ]),
+  fullScreen: PropTypes.bool,
 };
 
 Background.defaultProps = {
   theme: 'default',
+  fullScreen: false,
 };
 
 export default Background;

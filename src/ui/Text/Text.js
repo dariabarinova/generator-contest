@@ -8,6 +8,7 @@ import './text.css';
 const Text = (props) => {
   const {
     children,
+    html,
     bold,
     heavy,
     fontSize,
@@ -16,6 +17,7 @@ const Text = (props) => {
     white,
     ls,
     isFontLoaded,
+    className,
   } = props;
 
   const style = {};
@@ -31,8 +33,11 @@ const Text = (props) => {
         'text-white': white,
         'text-ls': ls,
         'text-fallback': !isFontLoaded,
+        [className]: className,
       })}
       style={style}
+      // eslint-disable-next-line
+      dangerouslySetInnerHTML={html ? {__html: html } : null}
     >
       {children}
     </span>
@@ -41,7 +46,8 @@ const Text = (props) => {
 
 Text.propTypes = {
   isFontLoaded: PropTypes.bool,
-  children: PropTypes.string.isRequired,
+  children: PropTypes.string,
+  html: PropTypes.string,
   bold: PropTypes.bool,
   heavy: PropTypes.bool,
   fontSize: PropTypes.number,
@@ -49,6 +55,7 @@ Text.propTypes = {
   italic: PropTypes.bool,
   white: PropTypes.bool,
   ls: PropTypes.bool,
+  className: PropTypes.string,
 };
 
 Text.defaultProps = {
@@ -60,6 +67,9 @@ Text.defaultProps = {
   italic: false,
   white: false,
   ls: false,
+  children: null,
+  html: null,
+  className: null,
 };
 
 export default FontLoaderDecorator(Text);

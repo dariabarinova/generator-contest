@@ -1,5 +1,6 @@
 import './reset.css';
 import './index.css';
+import './rem.css';
 
 import Logo from './Logo/Logo';
 import More from './More/More';
@@ -14,6 +15,9 @@ import RepostList, { RepostListItem } from './RepostList/RepostList';
 import LikeRepost from './LikeRepost/LikeRepost';
 import RangeSlider from './RangeSlider/RangeSlider';
 import Animation, { animationTypes } from './Animation/Animation';
+import Title from './Title/Title';
+import Description from './Description/Description';
+import * as Wrapper from './Wrapper/Wrapper';
 
 export {
   Logo,
@@ -32,4 +36,8 @@ export {
   RangeSlider,
   Animation,
   animationTypes,
+  Title,
+  Description,
+
+  Wrapper,
 };

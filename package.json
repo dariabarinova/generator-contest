@@ -9,7 +9,8 @@
     "lint-js": "eslint src",
     "lint-css": "stylelint \"src/**/*.{css,less,styl,scss,sass,sss}\"",
     "icons": "node ./src/ui/Icon/generateJsCss.js",
-    "animations": "node  ./src/ui/Animation/generateJsCss.js"
+    "animations": "node ./src/ui/Animation/generateJsCss.js",
+    "rems": "node ./src/ui/generateRem.js"
   },
   "dependencies": {
     "classnames": "^2.2.6",

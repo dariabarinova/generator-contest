@@ -1,6 +1,6 @@
 .like-repost {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .like-repost-handler {
@@ -15,4 +15,37 @@
   margin-left: -10rem;
   display: flex;
   justify-content: center;
+}
+
+.like-repost-handler:last-child .like-repost-popover-wrapper {
+  width: 30rem;
+  margin-left: -15rem;
+}
+
+.like-repost-handler .text {
+  font-size: 2rem;
+}
+
+@media only screen and (max-width: 980px) {
+  .like-repost-handler .text {
+    font-size: 2.5rem;
+  }
+}
+
+.like-repost-handler .repost-list-item-social-title {
+  font-size: 1.4rem;
+}
+
+.like-repost-handler .repost-list-item-social-value {
+  font-size: 1.3rem;
+}
+
+@media only screen and (max-width: 980px) {
+  .like-repost-handler .repost-list-item-social-title {
+    font-size: 2.3rem;
+  }
+
+  .like-repost-handler .repost-list-item-social-value {
+    font-size: 2.1rem;
+  }
 }

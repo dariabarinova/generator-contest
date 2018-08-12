@@ -11,12 +11,6 @@ html {
   font-size: 10px;
 }
 
-/* @media only screen and (max-width: 600px) {
-  html {
-    font-size: 6px;
-  }
-} */
-
 a {
   text-decoration: none;
   color: inherit;
