@@ -2,6 +2,16 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './wrapper.css';
 
+const MoreIdeas = ({ children }) => (
+  <div className="wrapper-more-ideas">
+    {children}
+  </div>
+);
+
+MoreIdeas.propTypes = {
+  children: PropTypes.element.isRequired,
+};
+
 const Description = ({ children }) => (
   <div className="wrapper-description">
     {children}
@@ -58,6 +68,7 @@ Content.propTypes = {
 };
 
 export {
+  MoreIdeas,
   Description,
   Title,
   LikeRepost,

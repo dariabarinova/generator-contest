@@ -46,7 +46,7 @@
     margin-bottom: 1.4rem;
   }
 
-  .popover-hidden {
+  .popover--hidden {
     margin-bottom: 0;
   }
 }

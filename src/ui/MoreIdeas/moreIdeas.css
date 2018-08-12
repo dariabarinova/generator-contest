@@ -1,3 +1,11 @@
+.wrapper-more-ideas {
+  top: 60%;
+  left: 50%;
+  margin-left: -13.95rem;
+  margin-top: -13.95rem;
+  position: absolute;
+}
+
 .more-ideas {
   display: block;
   width: 9.3rem;

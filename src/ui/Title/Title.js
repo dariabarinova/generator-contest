@@ -10,13 +10,13 @@ const locale = {
 const Title = () => (
   <h1 className="title">
     <span className="title-first">
-      <Text white heavy italic fontSize={13.9}>
+      <Text white heavy italic>
         {locale.h1FirstLine}
       </Text>
     </span>
     <span className="title-second">
       <span className="title-second-bg" />
-      <Text white heavy italic fontSize={13.9}>
+      <Text white heavy italic>
         {locale.h1SecondLine}
       </Text>
     </span>
