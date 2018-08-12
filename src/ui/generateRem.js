@@ -16,8 +16,6 @@ const stepCount = 50;
 const stepLen = (max - min) / stepCount;
 const stepValDelta = (rems[max] - rems[min]) / stepCount;
 
-console.log(stepLen, stepValDelta);
-
 let css = `/*
 it's generated file, don't touch, just run
 $ npm run icons

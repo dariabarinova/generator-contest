@@ -38,7 +38,7 @@ const Animation = ({ type }) => {
   const {
     gif,
     webm,
-    mp4,
+    // mp4,
     png,
     width,
     height,
