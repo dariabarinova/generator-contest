@@ -2,6 +2,36 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './wrapper.css';
 
+const Description = ({ children }) => (
+  <div className="wrapper-description">
+    {children}
+  </div>
+);
+
+Description.propTypes = {
+  children: PropTypes.element.isRequired,
+};
+
+const Title = ({ children }) => (
+  <div className="wrapper-title">
+    {children}
+  </div>
+);
+
+Title.propTypes = {
+  children: PropTypes.element.isRequired,
+};
+
+const Robot = ({ children }) => (
+  <div className="wrapper-robot">
+    {children}
+  </div>
+);
+
+Robot.propTypes = {
+  children: PropTypes.element.isRequired,
+};
+
 const LikeRepost = ({ children }) => (
   <div className="wrapper-like-repost">
     {children}
@@ -28,6 +58,9 @@ Content.propTypes = {
 };
 
 export {
+  Description,
+  Title,
   LikeRepost,
   Content,
+  Robot,
 };
