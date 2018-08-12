@@ -10,7 +10,8 @@
     "lint-css": "stylelint \"src/**/*.{css,less,styl,scss,sass,sss}\"",
     "icons": "node ./src/ui/Icon/generateJsCss.js",
     "animations": "node ./src/ui/Animation/generateJsCss.js",
-    "rems": "node ./src/ui/generateRem.js"
+    "rems": "node ./src/ui/generateRem.js",
+    "generate": "npm run icons && npm run animations && npm run rems"
   },
   "dependencies": {
     "classnames": "^2.2.6",
