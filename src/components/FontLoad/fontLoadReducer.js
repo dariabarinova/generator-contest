@@ -4,8 +4,9 @@ const types = {
 
 export const selector = state => state.fontLoadReducer.isFontsLoaded;
 
-export const markFontLoaded = () => ({
+export const markFontLoaded = opts => ({
   type: types.markFontLoaded,
+  opts,
 });
 
 const initialState = {
