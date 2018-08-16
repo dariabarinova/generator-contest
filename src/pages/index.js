@@ -3,10 +3,10 @@ import Helmet from 'react-helmet';
 import { Ui, locale } from '..';
 
 export default () => ([
-  <Helmet>
+  <Helmet key={0}>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
   </Helmet>,
-  <Ui.Background key={0} fullScreen>
+  <Ui.Background key={1} fullScreen>
     <Ui.Wrapper.Content>
       <Ui.Logo />
       <Ui.Wrapper.LikeRepost>

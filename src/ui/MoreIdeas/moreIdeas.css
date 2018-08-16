@@ -87,3 +87,11 @@
     font-size: 3.7rem;
   }
 }
+
+@media only screen and (max-height: 569px) {
+  .wrapper-more-ideas {
+    top: 45%;
+    margin-left: -10.5rem;
+    margin-top: -10.5rem;
+  }
+}

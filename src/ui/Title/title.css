@@ -76,3 +76,12 @@
     margin-left: 7rem;
   }
 }
+
+@media only screen and (max-height: 569px) {
+  .wrapper-title {
+    position: absolute;
+    top: -1%;
+    left: 6%;
+    width: 70rem;
+  }
+}

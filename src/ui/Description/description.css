@@ -47,3 +47,19 @@
     font-size: 3rem;
   }
 }
+
+@media only screen and (max-height: 1366px) {
+  .wrapper-description {
+    position: absolute;
+    top: 59%;
+    right: 6%;
+  }
+}
+
+@media only screen and (max-height: 569px) {
+  .wrapper-description {
+    position: absolute;
+    top: 59%;
+    right: 6%;
+  }
+}
