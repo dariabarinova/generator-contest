@@ -1,0 +1,20 @@
+.loader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  display: none;
+}
+
+.loader-visible {
+  display: block;
+}
+
+.loader-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -184px 0 0 -254.5px;
+}

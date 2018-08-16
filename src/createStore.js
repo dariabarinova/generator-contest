@@ -8,10 +8,10 @@ import createSagaMiddleware from 'redux-saga';
 
 import isClient from './isClient';
 import rootSaga from './rootSaga';
-import { fontLoadReducer } from './components';
+import { loaderReducer } from './components';
 
 const reducer = combineReducers({
-  fontLoadReducer,
+  loaderReducer,
 });
 
 const createStore = () => {
