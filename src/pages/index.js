@@ -1,6 +1,7 @@
 import React from 'react';
 import Helmet from 'react-helmet';
-import { Ui, locale, Components } from '..';
+import { Ui, locale } from '..';
+import * as Components from '../components';
 
 export default () => (
   <div>

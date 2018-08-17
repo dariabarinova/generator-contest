@@ -19,6 +19,5 @@ export default function* watchOnAppLoaded() {
   yield take(channel);
   yield delay(200);
   yield put(markAppLoaded());
-  // yield put({ type: 'test' });
   channel.close();
 }

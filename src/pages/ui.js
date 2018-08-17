@@ -1,5 +1,6 @@
 import React from 'react';
-import { Ui, locale, Components } from '..';
+import { Ui, locale } from '..';
+import * as Components from '../components';
 
 export default () => ([
   <Ui.Background key={0}>
