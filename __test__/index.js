@@ -1,10 +1,10 @@
-/* eslint-disable no-await-in-loop */
+/* eslint-disable no-restricted-syntax, no-await-in-loop */
 const puppeteer = require('puppeteer');
 
 const delay = ms => new Promise(resolve => setTimeout(resolve, ms));
 
 const screenshotsPath = './__test__/screenshots/';
-const resolutions = [
+const devicesResolutions = [
   // 800x600
   [779, 431],
   // 1024x768
@@ -57,22 +57,29 @@ const resolutions = [
   [480, 320],
 ];
 
+const pages = {
+  index: '/',
+  loader: '/loader',
+};
+
 (async () => {
   const browser = await puppeteer.launch();
   const page = await browser.newPage();
-  await page.goto('http://localhost:8000/');
 
-  // wait fonts-images
-  await delay(2000);
+  for (const pageKey of Object.keys(pages)) {
+    const pageUrl = pages[pageKey];
+    await page.goto(`http://localhost:8000${pageUrl}`);
 
-  let i = resolutions.length - 1;
-  while (i >= 0) {
-    const width = resolutions[i][0];
-    const height = resolutions[i][1];
-    const path = `${screenshotsPath}screen${width}x${height}.png`;
-    await page.setViewport({ width, height });
-    await page.screenshot({ path });
-    i -= 1;
+    // wait fonts-images
+    await delay(2000);
+
+    for (const device of devicesResolutions) {
+      const width = device[0];
+      const height = device[1];
+      const path = `${screenshotsPath}${pageKey}_screen${width}x${height}.png`;
+      await page.setViewport({ width, height });
+      await page.screenshot({ path });
+    }
   }
 
   await browser.close();
