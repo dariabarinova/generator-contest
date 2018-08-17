@@ -1,14 +1,14 @@
 import RangeSliderDataProvider from './RandeSliderDataProvider';
 import {
-  FontLoaderDecorator,
-  fontLoadReducer,
-  fontLoadSaga,
-} from './FontLoad';
+  loaderReducer,
+  loaderSaga,
+  Loader,
+} from './Loader';
 
 export {
   RangeSliderDataProvider,
 
-  FontLoaderDecorator,
-  fontLoadReducer,
-  fontLoadSaga,
+  loaderReducer,
+  loaderSaga,
+  Loader,
 };

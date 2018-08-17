@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import cx from 'classnames';
 
-import { FontLoaderDecorator } from '../../components';
 import './text.css';
 
 const Text = (props) => {
@@ -72,4 +71,4 @@ Text.defaultProps = {
   className: null,
 };
 
-export default FontLoaderDecorator(Text);
+export default Text;

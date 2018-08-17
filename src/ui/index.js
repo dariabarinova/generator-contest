@@ -18,6 +18,7 @@ import Animation, { animationTypes } from './Animation/Animation';
 import Title from './Title/Title';
 import Description from './Description/Description';
 import * as Wrapper from './Wrapper/Wrapper';
+import Loader from './Loader/Loader';
 
 export {
   Logo,
@@ -40,4 +41,5 @@ export {
   Description,
 
   Wrapper,
+  Loader,
 };
