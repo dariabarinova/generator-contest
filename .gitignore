@@ -62,3 +62,6 @@ typings/
 .cache/
 public
 yarn-error.log
+
+__test__/screenshots/**/*
+!__test__/screenshots/.keep
