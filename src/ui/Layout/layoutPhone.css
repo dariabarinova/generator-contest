@@ -5,9 +5,9 @@
 
 .phone .layoutBottomLeft {
   bottom: calc(7.3rem * 0.52);
-  left: calc(9rem * 0.52);
+  left: calc((11.3rem + 2rem) * 0.52);
 }
 
 .phone .layoutBottomRight {
-  right: calc(5.5rem * 0.52);
+  right: calc((5.5rem - 2rem) * 0.52);
 }

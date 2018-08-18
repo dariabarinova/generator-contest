@@ -70,7 +70,7 @@ const devicesResolutions = {
 };
 
 const pages = {
-  // index: '/',
+  index: '/',
   loader: '/loader',
   layout: '/layout',
 };

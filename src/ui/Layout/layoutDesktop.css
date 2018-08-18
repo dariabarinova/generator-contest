@@ -1,13 +1,13 @@
 .desktop .layoutTopLeft {
-  top: 7.3rem;
-  left: 7.6rem;
+  top: calc(7.3rem * 1);
+  left: calc(7.6rem * 1);
 }
 
 .desktop .layoutBottomLeft {
-  bottom: 7.3rem;
-  left: 9rem;
+  bottom: calc(7.3rem * 1);
+  left: calc(11.3rem * 1);
 }
 
 .desktop .layoutBottomRight {
-  right: 5.5rem;
+  right: calc(5.5rem * 1);
 }

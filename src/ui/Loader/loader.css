@@ -8,6 +8,9 @@
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.3s;
+}
+
+.loader .background {
   display: flex;
   align-items: center;
   justify-content: center;

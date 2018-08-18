@@ -5,7 +5,7 @@
 
 .tablet .layoutBottomLeft {
   bottom: calc(7.3rem * 0.76);
-  left: calc(9rem * 0.76);
+  left: calc((11.3rem + 1rem) * 0.76);
 }
 
 .tablet .layoutBottomRight {
