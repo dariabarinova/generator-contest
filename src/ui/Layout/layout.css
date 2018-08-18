@@ -1,11 +1,3 @@
-.layout {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-}
-
 .layoutDebug {
   background: rgba(0, 0, 0, 0.3);
   width: 100%;
@@ -17,22 +9,25 @@
   text-align: center;
 }
 
+.layout {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
 .layoutTopLeft {
   position: absolute;
-  top: 7.3rem;
-  left: 7.6rem;
 }
 
 .layoutBottomLeft {
   position: absolute;
-  bottom: 7.3rem;
-  left: 9rem;
 }
 
 .layoutBottomRight {
   position: absolute;
   bottom: 0;
-  right: 5.5rem;
 }
 
 .layoutCenterCenter {

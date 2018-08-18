@@ -13,15 +13,15 @@ class Loader extends PureComponent {
   render() {
     const { visible } = this.props;
     return (
-      <div
-        className={cx('loader', {
-          'loader-visible': visible,
-        })}
-      >
-        <Background fullScreen>
+      <Background fullScreen>
+        <div
+          className={cx('loader', {
+            'loader-visible': visible,
+          })}
+        >
           <img className="loader-image" src={image} alt="Loading..." />
-        </Background>
-      </div>
+        </div>
+      </Background>
     );
   }
 }

@@ -1,0 +1,13 @@
+.desktop .layoutTopLeft {
+  top: 7.3rem;
+  left: 7.6rem;
+}
+
+.desktop .layoutBottomLeft {
+  bottom: 7.3rem;
+  left: 9rem;
+}
+
+.desktop .layoutBottomRight {
+  right: 5.5rem;
+}

@@ -1,6 +1,22 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import MD from 'mobile-detect';
 import './layout.css';
+import './layoutPhone.css';
+import './layoutTablet.css';
+import './layoutDesktop.css';
+
+if (typeof window !== 'undefined') {
+  const device = new MD(window.navigator.userAgent);
+
+  if (device.phone()) {
+    document.body.className += ' phone';
+  } else if (device.tablet()) {
+    document.body.className += ' tablet';
+  } else {
+    document.body.className += ' desktop';
+  }
+}
 
 const pt = {
   children: PropTypes.oneOfType([

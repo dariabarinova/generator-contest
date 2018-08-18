@@ -1,0 +1,13 @@
+.tablet .layoutTopLeft {
+  top: calc(7.3rem * 0.76);
+  left: calc(7.6rem * 0.76);
+}
+
+.tablet .layoutBottomLeft {
+  bottom: calc(7.3rem * 0.76);
+  left: calc(9rem * 0.76);
+}
+
+.tablet .layoutBottomRight {
+  right: calc(5.5rem * 0.76);
+}
