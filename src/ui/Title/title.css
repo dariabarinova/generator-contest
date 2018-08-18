@@ -6,13 +6,6 @@
   margin: 10rem 0 20rem;
 }
 
-.wrapper-title {
-  position: absolute;
-  top: 9%;
-  left: 6%;
-  width: 70rem;
-}
-
 .title-first,
 .title-second {
   display: inline-block;
@@ -42,46 +35,4 @@
 
 .title .text {
   font-size: 13.9rem;
-}
-
-@media only screen and (max-width: 980px) {
-  .title .text {
-    font-size: 10rem;
-  }
-
-  .title-second {
-    position: relative;
-    margin-left: 7rem;
-  }
-}
-
-@media only screen and (max-width: 700px) {
-  .title .text {
-    font-size: 8rem;
-  }
-
-  .title-second {
-    position: relative;
-    margin-left: 7rem;
-  }
-}
-
-@media only screen and (max-width: 420px) {
-  .title .text {
-    font-size: 5.9rem;
-  }
-
-  .title-second {
-    position: relative;
-    margin-left: 7rem;
-  }
-}
-
-@media only screen and (max-height: 569px) {
-  .wrapper-title {
-    position: absolute;
-    top: -1%;
-    left: 6%;
-    width: 70rem;
-  }
 }

@@ -10,18 +10,3 @@
 .repost-list-item:last-child {
   margin-bottom: 0;
 }
-
-@media only screen and (max-width: 980px) {
-  .repost-list {
-    width: 20.5rem;
-    margin: 4rem 2.5rem 4.2rem;
-  }
-
-  .repost-list-item {
-    margin: 0 0 3rem;
-  }
-
-  .repost-list-item:last-child {
-    margin-bottom: 0;
-  }
-}

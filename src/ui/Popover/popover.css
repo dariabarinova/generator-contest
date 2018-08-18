@@ -40,13 +40,3 @@
 .popover-theme--like .popover-arrow {
   border-top-color: #ec4756;
 }
-
-@media only screen and (max-width: 980px) {
-  .popover {
-    margin-bottom: 1.4rem;
-  }
-
-  .popover--hidden {
-    margin-bottom: 0;
-  }
-}

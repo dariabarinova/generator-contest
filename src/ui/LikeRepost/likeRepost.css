@@ -26,26 +26,10 @@
   font-size: 2rem;
 }
 
-@media only screen and (max-width: 980px) {
-  .like-repost-handler .text {
-    font-size: 2.5rem;
-  }
-}
-
 .like-repost-handler .repost-list-item-social-title {
   font-size: 1.4rem;
 }
 
 .like-repost-handler .repost-list-item-social-value {
   font-size: 1.3rem;
-}
-
-@media only screen and (max-width: 980px) {
-  .like-repost-handler .repost-list-item-social-title {
-    font-size: 2.3rem;
-  }
-
-  .like-repost-handler .repost-list-item-social-value {
-    font-size: 2.1rem;
-  }
 }
