@@ -11,3 +11,10 @@
 .tablet .layoutBottomRight {
   right: calc(5.5rem * 0.76);
 }
+
+.tablet .layoutTopLeftQuarter {
+  top: calc(7.3rem * 0.76);
+  bottom: 50%;
+  left: calc(7.6rem * 0.76);
+  right: 30%;
+}

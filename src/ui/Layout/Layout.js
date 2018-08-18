@@ -40,6 +40,14 @@ const TopLeft = ({ children }) => (
   </div>
 );
 
+const TopLeftQuarter = ({ children }) => (
+  <div className="layoutTopLeftQuarter">
+    <div className="layoutTopLeftQuarter-content">
+      {children}
+    </div>
+  </div>
+);
+
 const BottomLeft = ({ children }) => (
   <div className="layoutBottomLeft">
     {children}
@@ -71,6 +79,7 @@ TopLeft.propTypes = pt;
 BottomLeft.propTypes = pt;
 BottomRight.propTypes = pt;
 CenterCenter.propTypes = pt;
+TopLeftQuarter.propTypes = pt;
 Debug.propTypes = {
   title: PropTypes.string.isRequired,
 };
@@ -82,4 +91,5 @@ export {
   Container,
   Debug,
   CenterCenter,
+  TopLeftQuarter,
 };

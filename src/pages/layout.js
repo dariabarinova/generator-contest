@@ -14,6 +14,9 @@ export default () => ([
       <Ui.Layout.TopLeft>
         <Ui.Layout.Debug title="TopLeft" />
       </Ui.Layout.TopLeft>
+      <Ui.Layout.TopLeftQuarter>
+        <Ui.Layout.Debug title="TopLeftQuarter" />
+      </Ui.Layout.TopLeftQuarter>
       <Ui.Layout.BottomLeft>
         <Ui.Layout.Debug title="BottomLeft" />
       </Ui.Layout.BottomLeft>

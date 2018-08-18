@@ -21,6 +21,18 @@
   position: absolute;
 }
 
+.layoutTopLeftQuarter {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.layoutTopLeftQuarter-content {
+  /* width: 1px;
+  height: 1px; */
+}
+
 .layoutBottomLeft {
   position: absolute;
 }

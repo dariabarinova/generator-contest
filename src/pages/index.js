@@ -18,6 +18,9 @@ export default () => ([
       <Ui.Layout.TopLeft>
         <Ui.Logo />
       </Ui.Layout.TopLeft>
+      <Ui.Layout.TopLeftQuarter>
+        <Ui.Title />
+      </Ui.Layout.TopLeftQuarter>
       <Ui.Layout.BottomLeft>
         <Ui.LikeRepost />
       </Ui.Layout.BottomLeft>
@@ -37,22 +40,3 @@ export default () => ([
     </Ui.Layout.Container>
   </Ui.Background>,
 ]);
-
-// export default () => (
-//   <div>
-//     <Components.LoaderProvider>
-//       {({ visible }) => (
-//         <Ui.Loader visible={visible} />
-//       )}
-//     </Components.LoaderProvider>
-//
-//     <Ui.Background key={1} fullScreen>
-//
-//
-//
-//
-//       <Ui.Description />
-//       <Ui.Title />
-//     </Ui.Background>
-//   </div>
-// );
