@@ -1,11 +1,10 @@
 import { connect } from 'react-redux';
-import { Ui } from '../..';
 import { selector as isAppLoaded } from './loaderReducer';
 
-const decorator = connect(
+export default connect(
   state => ({
     visible: !isAppLoaded(state),
   }),
+)(
+  ({ visible, children }) => children({ visible }),
 );
-
-export default decorator(Ui.Loader);

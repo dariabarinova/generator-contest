@@ -2,7 +2,7 @@ import RangeSliderDataProvider from './RandeSliderDataProvider';
 import {
   loaderReducer,
   loaderSaga,
-  Loader,
+  LoaderProvider,
 } from './Loader';
 
 export {
@@ -10,5 +10,5 @@ export {
 
   loaderReducer,
   loaderSaga,
-  Loader,
+  LoaderProvider,
 };

@@ -5,7 +5,11 @@ import * as Components from '../components';
 
 export default () => (
   <div>
-    <Components.Loader key={2} />
+    <Components.LoaderProvider>
+      {({ visible }) => (
+        <Ui.Loader visible={visible} />
+      )}
+    </Components.LoaderProvider>
     <Helmet key={0}>
       <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     </Helmet>

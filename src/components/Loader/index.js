@@ -1,9 +1,9 @@
 import loaderReducer from './loaderReducer';
 import loaderSaga from './loaderSaga';
-import Loader from './Loader';
+import LoaderProvider from './LoaderProvider';
 
 export {
   loaderSaga,
   loaderReducer,
-  Loader,
+  LoaderProvider,
 };
