@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import Link from 'gatsby-link';
 import cx from 'classnames';
 import './moreIdeas.css';
+import './moreIdeasPhone.css';
 
 const MoreIdeas = ({ children, large }) => (
   <Link

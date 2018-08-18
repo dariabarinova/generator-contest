@@ -29,8 +29,16 @@
 }
 
 .layoutTopLeftQuarter-content {
-  /* width: 1px;
-  height: 1px; */
+}
+
+.layoutBottomRightQuarter {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.layoutBottomRightQuarter-content {
 }
 
 .layoutBottomLeft {

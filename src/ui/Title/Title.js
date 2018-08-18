@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Text from '../Text/Text';
 import './title.css';
 
@@ -7,8 +8,14 @@ const locale = {
   h1SecondLine: 'конкурсов',
 };
 
-const Title = () => (
-  <h1 className="title">
+const Title = ({ storeRef, scale }) => (
+  <h1
+    className="title"
+    ref={storeRef}
+    style={{
+      transform: `scale(${scale}) rotate(-21deg)`,
+    }}
+  >
     <span className="title-first">
       <Text white heavy italic>
         {locale.h1FirstLine}
@@ -22,5 +29,16 @@ const Title = () => (
     </span>
   </h1>
 );
+
+
+Title.propTypes = {
+  storeRef: PropTypes.func,
+  scale: PropTypes.number,
+};
+
+Title.defaultProps = {
+  storeRef: null,
+  scale: 1,
+};
 
 export default Title;

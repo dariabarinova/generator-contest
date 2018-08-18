@@ -71,8 +71,8 @@ const devicesResolutions = {
 
 const pages = {
   index: '/',
-  loader: '/loader',
-  layout: '/layout',
+  // loader: '/loader',
+  // layout: '/layout',
 };
 
 (async () => {
@@ -95,6 +95,7 @@ const pages = {
         const height = device[1];
         const path = `${screenshotsPath}${deviceType}_${pageKey}_screen${width}x${height}.png`;
         await page.setViewport({ width, height });
+        await delay(300);
         await page.screenshot({ path });
       }
     }

@@ -18,9 +18,20 @@ export default () => ([
       <Ui.Layout.TopLeft>
         <Ui.Logo />
       </Ui.Layout.TopLeft>
-      <Ui.Layout.TopLeftQuarter>
-        <Ui.Title />
-      </Ui.Layout.TopLeftQuarter>
+      <Components.SizeContoller scaleFactor={0.9}>
+        {({ storeWrapperRef, storeScalableElemRef, scale }) => (
+          <Ui.Layout.TopLeftQuarter storeRef={storeWrapperRef}>
+            <Ui.Title scale={scale} storeRef={storeScalableElemRef} />
+          </Ui.Layout.TopLeftQuarter>
+        )}
+      </Components.SizeContoller>
+      <Components.SizeContoller scaleFactor={0.8}>
+        {({ storeWrapperRef, storeScalableElemRef, scale }) => (
+          <Ui.Layout.BottomRightQuarter storeRef={storeWrapperRef}>
+            <Ui.Description scale={scale} storeRef={storeScalableElemRef} />
+          </Ui.Layout.BottomRightQuarter>
+        )}
+      </Components.SizeContoller>
       <Ui.Layout.BottomLeft>
         <Ui.LikeRepost />
       </Ui.Layout.BottomLeft>

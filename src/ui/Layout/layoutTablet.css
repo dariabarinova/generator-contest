@@ -18,3 +18,10 @@
   left: calc(7.6rem * 0.76);
   right: 30%;
 }
+
+.tablet .layoutBottomRightQuarter {
+  bottom: calc(7.3rem * 0.76);
+  top: 50%;
+  right: calc(7.6rem * 0.76);
+  left: 50%;
+}

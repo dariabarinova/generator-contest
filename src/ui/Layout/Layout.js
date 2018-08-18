@@ -26,6 +26,11 @@ const pt = {
     PropTypes.element.isRequired,
     PropTypes.string.isRequired,
   ]).isRequired,
+  storeRef: PropTypes.func,
+};
+
+const dpt = {
+  storeRef: null,
 };
 
 const Debug = ({ title }) => (
@@ -34,42 +39,50 @@ const Debug = ({ title }) => (
   </div>
 );
 
-const TopLeft = ({ children }) => (
-  <div className="layoutTopLeft">
+const TopLeft = ({ children, storeRef }) => (
+  <div className="layoutTopLeft" ref={storeRef}>
     {children}
   </div>
 );
 
-const TopLeftQuarter = ({ children }) => (
-  <div className="layoutTopLeftQuarter">
+const TopLeftQuarter = ({ children, storeRef }) => (
+  <div className="layoutTopLeftQuarter" ref={storeRef}>
     <div className="layoutTopLeftQuarter-content">
       {children}
     </div>
   </div>
 );
 
-const BottomLeft = ({ children }) => (
-  <div className="layoutBottomLeft">
+const BottomRightQuarter = ({ children, storeRef }) => (
+  <div className="layoutBottomRightQuarter" ref={storeRef}>
+    <div className="layoutBottomRightQuarter-content">
+      {children}
+    </div>
+  </div>
+);
+
+const BottomLeft = ({ children, storeRef }) => (
+  <div className="layoutBottomLeft" ref={storeRef}>
     {children}
   </div>
 );
 
-const BottomRight = ({ children }) => (
-  <div className="layoutBottomRight">
+const BottomRight = ({ children, storeRef }) => (
+  <div className="layoutBottomRight" ref={storeRef}>
     {children}
   </div>
 );
 
-const CenterCenter = ({ children }) => (
-  <div className="layoutCenterCenter">
+const CenterCenter = ({ children, storeRef }) => (
+  <div className="layoutCenterCenter" ref={storeRef}>
     <div className="layoutCenterCenter-content">
       {children}
     </div>
   </div>
 );
 
-const Container = ({ children }) => (
-  <div className="layout">
+const Container = ({ children, storeRef }) => (
+  <div className="layout" ref={storeRef}>
     {children}
   </div>
 );
@@ -80,6 +93,16 @@ BottomLeft.propTypes = pt;
 BottomRight.propTypes = pt;
 CenterCenter.propTypes = pt;
 TopLeftQuarter.propTypes = pt;
+BottomRightQuarter.propTypes = pt;
+
+Container.defaultProps = dpt;
+TopLeft.defaultProps = dpt;
+BottomLeft.defaultProps = dpt;
+BottomRight.defaultProps = dpt;
+CenterCenter.defaultProps = dpt;
+TopLeftQuarter.defaultProps = dpt;
+BottomRightQuarter.defaultProps = dpt;
+
 Debug.propTypes = {
   title: PropTypes.string.isRequired,
 };
@@ -92,4 +115,5 @@ export {
   Debug,
   CenterCenter,
   TopLeftQuarter,
+  BottomRightQuarter,
 };
