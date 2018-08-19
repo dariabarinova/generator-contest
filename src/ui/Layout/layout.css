@@ -31,6 +31,16 @@
 .layoutTopLeftQuarter-content {
 }
 
+.layoutTopRightQuarter {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.layoutTopRightQuarter-content {
+}
+
 .layoutBottomRightQuarter {
   position: absolute;
   display: flex;

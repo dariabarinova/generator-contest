@@ -18,6 +18,22 @@ $ npm run icons
   }
 }
 
+.icon.icon--giveaway {
+  background: url(./images/giveaway.png) no-repeat;
+  background-size: 20.9rem 13.5rem;
+  width: 20.9rem;
+  height: 13.5rem;
+}
+
+@media
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 120dpi) {
+  .icon.icon--giveaway {
+    background: url(./images@2x/giveaway.png) no-repeat;
+    background-size: 20.9rem 13.5rem;
+  }
+}
+
 .icon.icon--heart {
   background: url(./images/heart.png) no-repeat;
   background-size: 1.9rem 1.8rem;

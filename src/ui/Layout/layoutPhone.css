@@ -19,6 +19,13 @@
   right: calc(7.6rem * 0.52);
 }
 
+.phone .layoutTopRightQuarter {
+  top: calc(7.3rem * 0.52);
+  bottom: 20%;
+  left: 85%;
+  right: 0;
+}
+
 .phone .layoutBottomRightQuarter {
   bottom: calc(7.3rem * 0.52);
   top: 50%;
