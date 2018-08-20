@@ -1,10 +1,11 @@
 .like-repost {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
 
 .like-repost-handler {
   position: relative;
+  margin-right: 5rem;
 }
 
 .like-repost-popover-wrapper {

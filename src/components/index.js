@@ -4,6 +4,7 @@ import {
   loaderSaga,
   LoaderProvider,
 } from './Loader';
+import SizeContoller from './SizeContoller';
 
 export {
   RangeSliderDataProvider,
@@ -11,4 +12,6 @@ export {
   loaderReducer,
   loaderSaga,
   LoaderProvider,
+
+  SizeContoller,
 };

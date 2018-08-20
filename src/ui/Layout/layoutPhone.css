@@ -1,0 +1,34 @@
+.phone .layoutTopLeft {
+  top: calc(7.3rem * 0.52);
+  left: calc(7.6rem * 0.52);
+}
+
+.phone .layoutBottomLeft {
+  bottom: calc(7.3rem * 0.52);
+  left: calc((11.3rem + 2rem) * 0.52);
+}
+
+.phone .layoutBottomRight {
+  right: calc((5.5rem - 2rem) * 0.52);
+}
+
+.phone .layoutTopLeftQuarter {
+  top: calc(7.3rem * 0.52);
+  bottom: 50%;
+  left: calc(7.6rem * 0.52);
+  right: calc(7.6rem * 0.52);
+}
+
+.phone .layoutTopRightQuarter {
+  top: calc(7.3rem * 0.52);
+  bottom: 20%;
+  left: 85%;
+  right: 0;
+}
+
+.phone .layoutBottomRightQuarter {
+  bottom: calc(7.3rem * 0.52);
+  top: 50%;
+  right: 0;
+  left: 60%;
+}

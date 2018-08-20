@@ -2,8 +2,7 @@
   line-height: 1;
   letter-spacing: 0.033rem;
   text-shadow: 0 0 11px #fff;
-  transform: rotate(-21deg);
-  margin: 10rem 0 20rem;
+  text-align: center;
 }
 
 .title-first,
@@ -14,7 +13,7 @@
 
 .title-second {
   position: relative;
-  margin-left: 14rem;
+  margin-left: 25%;
 }
 
 .title-second .text {
@@ -35,4 +34,12 @@
 
 .title .text {
   font-size: 13.9rem;
+}
+
+.phone .title-second {
+  margin-left: 10%;
+}
+
+.phone .title-first {
+  margin-left: -10%;
 }

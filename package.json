@@ -11,7 +11,8 @@
     "icons": "node ./src/ui/Icon/generateJsCss.js",
     "animations": "node ./src/ui/Animation/generateJsCss.js",
     "rems": "node ./src/ui/generateRem.js",
-    "generate": "npm run icons && npm run animations && npm run rems"
+    "generate": "npm run icons && npm run animations && npm run rems",
+    "screenshots": "node __test__/index.js"
   },
   "dependencies": {
     "classnames": "^2.2.6",
@@ -19,6 +20,7 @@
     "gatsby-link": "^2.0.0-beta.17",
     "gatsby-plugin-react-helmet": "^2.0.11",
     "lodash": "^4.17.10",
+    "mobile-detect": "^1.4.2",
     "react": "16.4.2",
     "react-dom": "16.4.2",
     "react-draggable": "^3.0.5",

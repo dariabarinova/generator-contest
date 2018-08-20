@@ -3,6 +3,7 @@
 
 const types = [
   'arrow',
+  'giveaway',
   'heart',
   'logo-large',
   'logo',

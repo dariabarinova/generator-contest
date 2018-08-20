@@ -18,6 +18,8 @@ import Animation, { animationTypes } from './Animation/Animation';
 import Title from './Title/Title';
 import Description from './Description/Description';
 import Loader from './Loader/Loader';
+import * as Layout from './Layout/Layout';
+import Orientation from './Orientation/Orientation';
 
 export {
   Logo,
@@ -40,4 +42,6 @@ export {
   Description,
 
   Loader,
+  Layout,
+  Orientation,
 };

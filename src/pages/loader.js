@@ -1,6 +1,7 @@
 import React from 'react';
 import { Ui } from '..';
 
-export default () => (
-  <Ui.Loader visible />
-);
+export default () => ([
+  <Ui.Orientation key="orientation" />,
+  <Ui.Loader visible />,
+]);

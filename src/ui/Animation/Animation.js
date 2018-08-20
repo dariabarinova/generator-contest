@@ -34,7 +34,7 @@ const typeToSize = {
   },
 };
 
-const Animation = ({ type }) => {
+const Animation = ({ type, margin, scale }) => {
   const {
     gif,
     webm,
@@ -44,6 +44,12 @@ const Animation = ({ type }) => {
     height,
   } = animations[type];
   const overridenSize = typeToSize[type];
+  const style = {
+    ...(overridenSize || { width, height }),
+  };
+
+  if (margin) style.margin = margin;
+  if (scale) style.transform = `scale(${scale})`;
 
   if (webm) {
     return (
@@ -54,7 +60,7 @@ const Animation = ({ type }) => {
         autoPlay
         loop
         poster={png}
-        style={overridenSize || { width, height }}
+        style={style}
       >
         {/* <source src={mp4} type="video/mp4" /> */}
         <source src={webm} type="video/webm;" />
@@ -66,7 +72,7 @@ const Animation = ({ type }) => {
     <img
       alt="animation"
       src={gif}
-      style={overridenSize || { width, height }}
+      style={style}
     />
   );
 };
@@ -75,6 +81,13 @@ Animation.propTypes = {
   type: PropTypes.oneOf(
     animationTypes,
   ).isRequired,
+  margin: PropTypes.string,
+  scale: PropTypes.number,
+};
+
+Animation.defaultProps = {
+  margin: '',
+  scale: null,
 };
 
 export { animationTypes };
