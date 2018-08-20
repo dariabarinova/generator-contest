@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[5],{230:function(e,n,t){"use strict";t.r(n);var a=t(1),i=t.n(a),o=t(236);n.default=function(){return[i.a.createElement(o.a.Orientation,{key:"orientation"}),i.a.createElement(o.a.Loader,{visible:!0})]}}}]);
+//# sourceMappingURL=component---src-pages-loader-js-3548140150e6b0deb2dc.js.map
