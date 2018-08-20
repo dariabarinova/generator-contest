@@ -12,7 +12,8 @@
     "animations": "node ./src/ui/Animation/generateJsCss.js",
     "rems": "node ./src/ui/generateRem.js",
     "generate": "npm run icons && npm run animations && npm run rems",
-    "screenshots": "node __test__/index.js"
+    "screenshots": "node __test__/index.js",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
   },
   "dependencies": {
     "classnames": "^2.2.6",
@@ -39,6 +40,7 @@
     "eslint-plugin-import": "^2.13.0",
     "eslint-plugin-jsx-a11y": "^6.1.1",
     "eslint-plugin-react": "^7.10.0",
+    "gh-pages": "^1.2.0",
     "image-size": "^0.6.3",
     "prop-types": "^15.6.2",
     "puppeteer": "^1.7.0",
