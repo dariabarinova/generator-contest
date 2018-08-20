@@ -39,6 +39,17 @@ const Debug = ({ title }) => (
   </div>
 );
 
+const Scalable = ({ children, scale }) => {
+  const style = {};
+  if (scale) style.transform = `scale(${scale})`;
+
+  return (
+    <div className="layoutScalable" style={style}>
+      {children}
+    </div>
+  );
+};
+
 const TopLeft = ({ children, storeRef }) => (
   <div className="layoutTopLeft" ref={storeRef}>
     {children}
@@ -103,6 +114,10 @@ CenterCenter.propTypes = pt;
 TopLeftQuarter.propTypes = pt;
 BottomRightQuarter.propTypes = pt;
 TopRightQuarter.propTypes = pt;
+Scalable.propTypes = {
+  ...pt,
+  scale: PropTypes.number,
+};
 
 Container.defaultProps = dpt;
 TopLeft.defaultProps = dpt;
@@ -112,6 +127,10 @@ CenterCenter.defaultProps = dpt;
 TopLeftQuarter.defaultProps = dpt;
 BottomRightQuarter.defaultProps = dpt;
 TopRightQuarter.defaultProps = dpt;
+Scalable.defaultProps = {
+  ...dpt,
+  scale: null,
+};
 
 Debug.propTypes = {
   title: PropTypes.string.isRequired,
@@ -127,4 +146,5 @@ export {
   TopLeftQuarter,
   BottomRightQuarter,
   TopRightQuarter,
+  Scalable,
 };

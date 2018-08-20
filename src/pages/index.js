@@ -16,16 +16,23 @@ export default () => ([
   </Components.LoaderProvider>,
   <Ui.Background fullScreen key="container">
     <Ui.Layout.Container>
+
       <Ui.Layout.TopLeft>
         <Ui.Logo />
       </Ui.Layout.TopLeft>
 
       <Components.SizeContoller scaleFactor={0.9}>
-        {({ storeWrapperRef, storeScalableElemRef, scale }) => (
-          <Ui.Layout.TopLeftQuarter storeRef={storeWrapperRef}>
+        {({ storeWrapperRef, storeScalableElemRef, scale }) => ([
+          <Ui.Layout.TopLeftQuarter storeRef={storeWrapperRef} key="title">
             <Ui.Title scale={scale} storeRef={storeScalableElemRef} />
-          </Ui.Layout.TopLeftQuarter>
-        )}
+          </Ui.Layout.TopLeftQuarter>,
+
+          <Ui.Layout.TopLeftQuarter storeRef={storeWrapperRef} key="animation">
+            <Ui.Layout.Scalable scale={scale}>
+              <Ui.Animation type="5" margin="17rem 69rem 0 0" scale={1 / scale} />
+            </Ui.Layout.Scalable>
+          </Ui.Layout.TopLeftQuarter>,
+        ])}
       </Components.SizeContoller>
 
       <Components.SizeContoller scaleFactor={0.8}>
